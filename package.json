@@ -4,7 +4,7 @@
   "private": true,
   "description": "Cevo Australia Website",
   "scripts": {
-    "clean": "rm -rf ./public ./static/js/*.min.js ./static/css/*.min.css ./static/ugly ./static/clean && cp ./data/assets.json.orig ./data/assets.json",
+    "clean": "rm -rf ./public ./static/js/*.min.js ./static/css/*.min.css ./static/ugly ./static/clean && echo '{}' > ./data/assets.json",
     "mkdirs": "mkdir -p static/ugly/js static/clean/css",
     "uglify-js": "for file in `basename -a static/js/*.js`   ; do uglifyjs static/js/${file}  -o static/ugly/js/${file}  ; done",
     "clean-css": "for file in `basename -a static/css/*.css` ; do cleancss static/css/${file} -o static/clean/css/${file} ; done",
