@@ -1,0 +1,23 @@
+{
+  "name": "cevo-com-au-hugo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Cevo Australia Website",
+  "scripts": {
+    "clean": "rm -rf ./public ./static/js/*.min.js ./static/css/*.min.css ./static/ugly ./static/clean && cp ./data/assets.json.orig ./data/assets.json",
+    "mkdirs": "mkdir -p static/ugly/js static/clean/css",
+    "uglify-js": "for file in `basename -a static/js/*.js`   ; do uglifyjs static/js/${file}  -o static/ugly/js/${file}  ; done",
+    "clean-css": "for file in `basename -a static/css/*.css` ; do cleancss static/css/${file} -o static/clean/css/${file} ; done",
+    "hashmark-js": "hashmark --cwd ./static/ugly -l 8 js/* '{dir}/{name}-{hash}.min{ext}' --asset-map ../assets.json",
+    "hashmark-css": "hashmark --cwd ./static/clean -l 8 css/* '{dir}/{name}-{hash}.min{ext}' --asset-map ../assets.json",
+    "move": "cp -r ./static/assets.json ./data/assets.json && cp ./static/clean/css/*-*.min.css ./static/css/ && cp ./static/ugly/js/*-*.min.js ./static/js/",
+    "build": "npm run clean && npm run mkdirs && npm run uglify-js && npm run clean-css && npm run hashmark-js && npm run hashmark-css && npm run move",
+    "hugo": "npm run build && hugo && hugo serve"
+  },
+  "devDependencies": {
+    "clean-css": "^4.1.9",
+    "clean-css-cli": "^4.1.10",
+    "hashmark": "^5.0.0",
+    "uglify-js": "^3.1.9"
+  }
+}

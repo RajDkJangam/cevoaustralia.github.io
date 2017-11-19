@@ -1,2 +1,9 @@
 public
 _site/*
+.*.swp
+node_modules
+static/clean
+static/ugly
+static/js/*.min.js
+static/css/*.min.css
+static/assets.json
