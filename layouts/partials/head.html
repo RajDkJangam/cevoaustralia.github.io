@@ -8,12 +8,11 @@
   <title>{{ .Title }}{{ if not .IsHome }} &middot; {{ .Site.Title }}{{ end }}</title>
   {{ "<!-- Stylesheets -->" | safeHTML }}
   <link href="{{ "css/bootstrap-v3.3.7/bootstrap.min.css" | absURL }}" rel="stylesheet">
-  <link href="{{ "css/agency.css" | absURL }}" rel="stylesheet">
   <link href="{{ "css/jquery.form-validator-v2.3.44/theme-default.min.css" | absURL }}" rel="stylesheet">
 
-  {{ range .Site.Params.custom_css }}
-    <link rel="stylesheet" href="{{ . | absURL }}">
-  {{ end }}
+  <link rel="stylesheet" href="{{ index .Site.Data.assets "css/agency.css" | default "css/agency.css" | absURL }}">
+  <link rel="stylesheet" href="{{ index .Site.Data.assets "css/actions.css" | default "css/actions.css" | absURL }}">
+  <link rel="stylesheet" href="{{ index .Site.Data.assets "css/post.css" | default "css/post.css" | absURL }}">
 
   {{ with not .Site.Params.disableFonts }}
     <link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
