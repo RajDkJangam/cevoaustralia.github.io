@@ -13,7 +13,18 @@ endif
 run:
 	hugo serve --baseUrl $(BASE_URL) ${BUILD_DRAFTS}
 
+npm-install:
+	@npm install
+
+npm-build:
+	@npm run build
+
+hugo:
+	@hugo --baseUrl $(BASE_URL)
+
 build:
+	npm install
+	npm run build
 	hugo --baseUrl $(BASE_URL) ${BUILD_DRAFTS}
 
 default: build

@@ -7,3 +7,5 @@ RUN mv ./hugo /usr/local/bin
 RUN chmod +x /usr/local/bin/hugo
 RUN hugo version
 RUN pip install pygments
+RUN apt-get update
+RUN apt-get install -y npm
