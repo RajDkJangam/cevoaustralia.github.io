@@ -4,28 +4,28 @@ type: news
 articles:
   - name: Cevo brings major cloud cred to the No.2 place in the 2017 CRN Fast50
     date: 2017-12-04
-    publication: CRN
+    publication: Computer Reseller News
     img: news/cevo_group.jpg
     url: "https://www.crn.com.au/feature/cevo-brings-major-cloud-cred-to-the-no2-place-in-the-2017-crn-fast50-478626"
     description:
-      Cevo might be a new name for some, but the Melbourne software developer and consultant is loaded with some serious cloud cred.
+      Cevo might be a new name for some, but the Melbourne software developer and consultancy is loaded with some serious cloud cred.
   - name: "Rapid results: How the 2017 CRN Fast50 did it"
     date: 2017-12-01
-    publication: CRN
+    publication: Computer Reseller News
     img: news/crn_rapid_results.png
     url: "https://www.crn.com.au/feature/rapid-results-how-the-2017-crn-fast50-did-it-478812"
     description:
       Half a billion dollars – that’s how much revenue the CRN Fast50 turned over in 2017. It’s a huge amount of revenue driven by some of Australia’s fastest-growing IT solution providers.
   - name: RIoT Solutions, Cevo and Cirrus Networks top 2017 CRN Fast50
     date: 2017-11-30
-    publication: CRN
+    publication: Computer Reseller News
     img: news/crn_fast_50_logo.png
     url: "https://www.crn.com.au/news/riot-solutions-cevo-and-cirrus-networks-top-2017-crn-fast50-478820"
     description:
       CRN is thrilled to announce its ninth CRN Fast50, comprising the fastest-growing IT solution providers in the Australian IT industry.
   - name: "Meet the 2017 CRN Fast50!"
     date: 2017-11-30
-    publication: CRN
+    publication: Computer Reseller News
     img: news/crn_fast_50_presentation.jpg
     url: "https://www.crn.com.au/gallery/meet-the-2017-crn-fast50-478742/page49"
     description:
