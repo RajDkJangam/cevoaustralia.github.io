@@ -1,0 +1,25 @@
+<section id="news">
+  <div class="container-fluid">
+    <div class="row text-center">
+      <h2 class="section-heading">{{ with .Site.Params.news.title }}{{ . | markdownify }}{{ end }}</h2>
+    </div>
+    <br/>
+
+    {{ range .Params.articles }}
+      {{ $url := printf "img/%s" .img }}
+      <div class='row'>
+        <div class="col-sm-3 col-sm-offset-2">
+         <a href="{{ .url }}" target="_blank"> <img class="partner-logo" src="{{ $url | absURL }}"  /></a>
+        </div>
+        <div class='col-sm-6'>
+          <a href="{{ .url }}" target="_blank"><h5>{{ .name }}</h5></a>
+            <p>
+            {{ .description }}
+            </p>
+        </div>
+      </div>
+    {{ end }}
+<hr>
+    
+  </div>
+</section>

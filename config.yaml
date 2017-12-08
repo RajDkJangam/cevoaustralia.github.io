@@ -43,6 +43,7 @@ params:
     about: About
     casestudies: Case Studies
     blog: Blog
+    news: News
     partners: Partners
     testimonials: Testimonials
 
@@ -54,6 +55,10 @@ params:
     center: true
     title: Our team
     subtitle: Meet the Cevo crew
+
+  news:
+    center: true
+    title: Cevo in the News
 
   services:
     title: Services
