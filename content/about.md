@@ -340,7 +340,7 @@ people:
   - name: Trystan Sykes
     sort: 2017-12-8
     position: DevOps Consultant
-    desc: Trystan has an extensive background in creating workable operational culture, customer service and stakeholder engagement. He has only recently begun his journey as a developer but in a very short amount of time has displayed an aptitude and flair for software engineering. He loves solving interesting problems and excels at being an effective and calm communicator no matter the circumstance. 
+    desc: Trystan has an extensive background in creating workable operational cultures, customer service and stakeholder engagement. He has only recently begun his journey as a developer but in a very short amount of time has displayed an aptitude and flair for software engineering. He loves solving interesting problems and excels at being an effective and calm communicator no matter the circumstance. 
     avatar: trystan_sykes.jpg
     socials:
       - icon_class: fa fa-linkedin
