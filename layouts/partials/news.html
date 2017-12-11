@@ -1,5 +1,5 @@
 <section id="news">
-  <div class="container-fluid">
+  <div class="container-fluid news">
     <div class="row text-center">
       <h2 class="section-heading">{{ with .Site.Params.news.title }}{{ . | markdownify }}{{ end }}</h2>
     </div>
@@ -12,10 +12,12 @@
          <a href="{{ .url }}" target="_blank"> <img class="partner-logo" src="{{ $url | absURL }}"  /></a>
         </div>
         <div class='col-sm-6'>
-          <a href="{{ .url }}" target="_blank"><h5>{{ .name }}</h5></a>
+          <a href="{{ .url }}" target="_blank"><h3>{{ .name }}</h3></a>
+          <div class='published'>{{ .publication }}, {{ dateFormat "January 2, 2006" .date}}</div>
             <p>
             {{ .description }}
             </p>
+          <a href="{{ .url }}" target="_blank" class="button big">Continue Reading</a>
         </div>
       </div>
     {{ end }}
