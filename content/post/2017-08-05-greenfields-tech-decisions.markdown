@@ -29,6 +29,16 @@ In summary I highlighted three points:
 
 If you're looking for more information, you can find my slides here:
 
-{% raw %}
-<iframe src="//www.slideshare.net/slideshow/embed_code/key/IIr6HrsnT6VXXW" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/TrentHornibrook/greenfields-tech-decisions" title="Greenfields tech decisions" target="_blank">Greenfields tech decisions</a> </strong> from <strong><a href="https://www.slideshare.net/TrentHornibrook" target="_blank">Trent Hornibrook</a></strong> </div>
-{% endraw %}
+
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/IIr6HrsnT6VXXW" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen>
+</iframe> 
+<div style="margin-bottom:5px">
+    <strong>
+        <a href="//www.slideshare.net/TrentHornibrook/greenfields-tech-decisions" title="Greenfields tech decisions" target="_blank">Greenfields tech decisions</a>
+    </strong>
+    from
+    <strong>
+        <a href="https://www.slideshare.net/TrentHornibrook" target="_blank">Trent Hornibrook</a>
+    </strong>
+</div>
+
