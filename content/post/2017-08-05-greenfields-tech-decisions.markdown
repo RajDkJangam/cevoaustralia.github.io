@@ -20,6 +20,7 @@ url: culture/devops/leadership/2017/08/05/greenfields-tech-decisions.html
 I recently gave a talk at at [Infracoders meet-up](https://www.meetup.com/en-AU/Infrastructure-Coders/) titled 'Greenfields tech decisions'
 
 In summary I highlighted three points:
+
 * Don't put the same level of importance on all decisions - avoid ['bikesheading'](https://en.wiktionary.org/wiki/bikeshedding)
 * It's imperative that you factor in your people in the decisions
 * Start small and iterate - as a start-up focus on shipping over gold-plating
