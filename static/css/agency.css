@@ -3,6 +3,7 @@
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
+
 .partner-logo {
   display: block;
   margin-left: auto;
@@ -1108,4 +1109,15 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: #e38105;
-}-
+}
+
+.relative {
+    position: relative
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
