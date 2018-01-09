@@ -23,6 +23,7 @@ params:
   custom_css:
     - css/post.css
     - css/actions.css
+    - css/news.css
 
   taxonomies:
     tag: tags
