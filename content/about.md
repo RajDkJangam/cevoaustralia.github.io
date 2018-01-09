@@ -346,4 +346,13 @@ people:
       - icon_class: fa fa-linkedin
         url: https://www.linkedin.com/in/trystan-sykes/                
 
+  - name: Paul Borg
+    sort: 2017-12-9
+    position: Cloud Engineer
+    desc: Paul has a wide range of experience in IT across Database, System and Cloud Administration. His mantra is to "Automate All the Things" and strives to keep technology implementations simple, consumable and current. Though he considers himself forever a student of technology, his broad experience in the field makes him a highly skilled and knowledgable advisor.    
+    avatar: paul_borg.jpg
+    socials:
+      - icon_class: fa fa-linkedin
+        url: https://www.linkedin.com/in/paulieborg/
+
 ---
