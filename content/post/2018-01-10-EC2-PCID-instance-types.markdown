@@ -29,6 +29,15 @@ shows that they've already patched and protected _their_ infrastructure but you 
 that you are responsible for patching the operating system running on your EC2 instances, and this is
 where things get ... complicated.
 
+## Give it to me straight, Doc
+
+If you want the TL;DR from all this, here are a few general rules to follow:
+
+1. Run your EC2 instances using the most recent AMI that you can which uses the HVM virtualisation mode
+1. Patch your operating systems to make sure you have the Meltdown fixes applied
+1. Update to more recent EC2 instance families
+1. Run the latest Linux kernel you can to ensure you have `PCID` support
+
 ## Problems at the lowest level
 
 Let's start off with some basics. The bugs, which exist in all Intel CPUs manufactured since about 2013
@@ -81,7 +90,7 @@ completeness for a minor capability improvement than as a critical feature.
 
 It turns out that `PCID`is important in alleviating some of the performance impacts of the KPTI patches, and in
 preventing one application from killing system performance for all other applications. You see, the kernel maintains
-a Tranlation Lookaside Buffer (TLB), which is kind of like an index for the mappings between kernel and userland
+a Translation Lookaside Buffer (TLB), which is kind of like an index for the mappings between kernel and userland
 memory pages; when a system call crosses that userland/kernel boundary, kernels running on processors without
 `PCID` support must throw away the TLB and start again, increasing the amount of time it takes to execute
 frequent operations.
@@ -116,20 +125,11 @@ Frustratingly, the `hs1` (or "high storage") instance type is perhaps worst affe
 workloads that need to make a lot of disk I/O system calls, thereby bringing the highest amount of performance
 overhead from the Meltdown patches, and it doesn't support PCID, meaning that you're losing out twice over.
 
-## Give it to me straight, Doc
-
-If you want the TL;DR from all this, here are a few general rules to follow:
-
-1. Run your EC2 instances using the most recent AMI that you can which uses the HVM virtualisation mode
-1. Patch your operating systems to make sure you have the Meltdown fixes applied
-1. Update to more recent EC2 instance families
-1. Run the latest Linux kernel you can to ensure you have `PCID` support
-
 ## This is all very confusing ...
 
 I've tried to keep a balance between enough technical information and, where possible, useful simplifications.
 
-If you'd like some assistance working through this mess, please [contact us](sales@cevo.com.au) and we'd be happy to
+If you'd like some assistance working through this mess, please [contact us](#contact) and we'd be happy to
 see what we can do to help out.
 
 ## References
