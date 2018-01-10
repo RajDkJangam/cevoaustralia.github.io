@@ -37,7 +37,7 @@ people:
       problems with the pragmatic use of IT for over 2 decades.
     avatar: geoff_rohrsheim.jpg
     socials:
-      - icon_class: fa fa-linkedin
+      - icon_class: fa-linkedin
         url: https://au.linkedin.com/in/geoffrohrsheim
   - name: Hannah Browne
     sort: 2015-05-19
@@ -49,9 +49,9 @@ people:
       always easier to solve.
     avatar: hannah_browne.jpg
     socials:
-      - icon_class: fa fa-linkedin
+      - icon_class: fa-linkedin
         url: https://au.linkedin.com/in/hannahbrowne
-      - icon_class: fa fa-twitter
+      - icon_class: fa-twitter
         url: https://www.twitter.com/hannahbrowne
 
   - name: Steve Mactaggart
@@ -64,9 +64,9 @@ people:
       # Using Lean and Agile principals, Steve is constantly working with teams to help them realise the goal of delivering value in discrete units, measuring the results and then learning and adapting in rapid succession.
     avatar: steve_mactaggart.jpg
     socials:
-      - icon_class: fa fa-linkedin
+      - icon_class: fa-linkedin
         url: https://www.linkedin.com/in/steve-mactaggart
-      - icon_class: fa fa-twitter
+      - icon_class: fa-twitter
         url: https://www.twitter.com/stevemac
 
   - name: Adam Nowotny
@@ -76,9 +76,9 @@ people:
       Adam started programming after getting his first 8-bit computer Atari 800XL at the age of seven. He has worked in software delivery teams as a developer, agile coach and technical lead for over 20 clients in Australia, Ireland, Poland, China, Brazil and India.
     avatar: adam_nowotny.jpg
     socials:
-      - icon_class: fa fa-linkedin
+      - icon_class: fa-linkedin
         url: https://www.linkedin.com/in/adamnowotny
-      - icon_class: fa fa-twitter
+      - icon_class: fa-twitter
         url: https://www.twitter.com/adam_nowotny
 
   - name: Robert Rocco
@@ -88,9 +88,9 @@ people:
       Robert Rocco is highly motivated and goal driven member of the team at Cevo.  He is continuously seeking knowledge and thrives on challenges.  Finding the best solution for a problem is one of his main focuses, believing you should always be looking to improve.
     avatar: robert_rocco.jpg
     socials:
-      - icon_class: fa fa-linkedin
+      - icon_class: fa-linkedin
         url: https://au.linkedin.com/in/robert-rocco
-  #     - icon_class: fa fa-facebook
+  #     - icon_class: fa-facebook
   #       url: http://facebook.com
 
   - name: Andy Shaw
@@ -100,9 +100,9 @@ people:
       Andy was once a developer before he became fascinated with devops and being able to automate All The Things. Since then, he's been enjoying using some of the new technologies emerging in the devops space alongside proven technologies to solve a diverse range of problems.
     avatar: andy_shaw.jpg
     socials:
-      - icon_class: fa fa-linkedin
+      - icon_class: fa-linkedin
         url: https://www.linkedin.com/in/andy-shaw-35095920/
-    #   - icon_class: fa fa-facebook
+    #   - icon_class: fa-facebook
     #     url: http://facebook.com
 
   - name: Trent Hornibrook
@@ -112,9 +112,9 @@ people:
       Trent Hornibrook is a passionate engineer that wants to reduce the cycle from ‘idea’ to ‘cash’. Having a history of Infrastructure Operations, MySQL DBA and Agile Delivery, Trent loves simplifying complex problems and identifying ways to deliver value sooner.
     avatar: trent_hornibrook.jpg
     socials:
-      - icon_class: fa fa-linkedin
+      - icon_class: fa-linkedin
         url: https://au.linkedin.com/in/trenthornibrook
-      - icon_class: fa fa-twitter
+      - icon_class: fa-twitter
         url: https://www.twitter.com/mysqldbahelp
 
   - name: Owen Chung
@@ -124,7 +124,7 @@ people:
       Owen Chung is a passionate technologist in the game since the turn of the century. He believes tech is an expression of culture. Quality tech reflects a quality culture. His mission is to help tech builders, makers and creators be their best wielding his devops superpowers to drive this cultural change.
     avatar: owen_chung.jpg
     socials:
-      - icon_class: fa fa-linkedin
+      - icon_class: fa-linkedin
         url: https://au.linkedin.com/in/owen-chung-27b2bb11
 
   - name: Elliott Gorrell
@@ -134,7 +134,7 @@ people:
       Elliott has always had  a passion for technology knowing from an early age he would one day be working in the tech field. He has a love for crafting quality code and the agile lifecycle. His move to Cevo allows him to assist organisations in their evolution into becoming more dynamic and efficient through the use of agile practices.
     avatar: elliott_gorrell.jpg
     socials:
-      - icon_class: fa fa-linkedin
+      - icon_class: fa-linkedin
         url: https://www.linkedin.com/in/elliott-gorrell
 
   - name: James Strain
@@ -144,7 +144,7 @@ people:
       James appreciates that his passion and enjoyment comes from helping businesses to deliver better experiences to their customers, more rapidly and frequently. He has a broad range of experience in software delivery, and has a particular focus on test and infrastructure automation.
     avatar: james_strain.jpg
     socials:
-      - icon_class: fa fa-linkedin
+      - icon_class: fa-linkedin
         url: https://www.linkedin.com/in/jamesstrain1
 
   - name: Colin Panisset
@@ -154,9 +154,9 @@ people:
       Colin brings his history of operational excellence together with a desire to improve delivery practices to drive business value through improving culture, empathy, automation and technical excellence. He has a knack for understanding and explaining complex systems, and has presented at events like AWS Summits, Devops Days, and many meetups.
     avatar: colin_panisset.jpg
     socials:
-      - icon_class: fa fa-linkedin
+      - icon_class: fa-linkedin
         url: https://www.linkedin.com/in/colinpanisset
-      - icon_class: fa fa-twitter
+      - icon_class: fa-twitter
         url: https://www.twitter.com/nonspecialist
 
   - name: Melissa Ngau
@@ -168,9 +168,9 @@ people:
       Melissa champions cross-competency collaboration to achieve successful delivery of real value for the customer, and has a passion for coaching and mentoring teams.
     avatar: melissa_ngau.jpg
     socials:
-      - icon_class: fa fa-linkedin
+      - icon_class: fa-linkedin
         url: https://au.linkedin.com/in/melissangau
-      - icon_class: fa fa-twitter
+      - icon_class: fa-twitter
         url: https://twitter.com/MsNgau
 
   - name: Nikita Gandhi
@@ -181,9 +181,9 @@ people:
       Her aim is to establish a culture and environment where software releases can happen rapidly, frequently, and more reliably with the use of automation.
     avatar: nikita_gandhi.jpg
     socials:
-     - icon_class: fa fa-linkedin
+     - icon_class: fa-linkedin
        url: https://au.linkedin.com/in/nikita-gandhi-6416b24b
-    #   - icon_class: fa fa-twitter
+    #   - icon_class: fa-twitter
     #     url: https://twitter.com/
 
   - name: Simon Bond
@@ -192,11 +192,11 @@ people:
     desc: Simon can be found playing Product Owner, Business Analysis, IM/PM or Agile Coaching roles. He is on a perpetual journey to drag IT closer to "the business" and EVERYONE closer to their customers. Simon is an efficiency addict who loves helping teams shift the dial from a focus on outputs to a focus on measurable business outcomes.
     avatar: simon_bond.jpg
     socials:
-      - icon_class: fa fa-linkedin
+      - icon_class: fa-linkedin
         url: https://au.linkedin.com/in/sjbond
-    #   - icon_class: fa fa-twitter
+    #   - icon_class: fa-twitter
     #     url: https://twitter.com/
-    #   - icon_class: fa fa-facebook
+    #   - icon_class: fa-facebook
     #     url: http://facebook.com
 
   - name: Henrik Axelsson
@@ -205,11 +205,11 @@ people:
     desc: Henrik has worked across a large variety of technology roles before landing at Business Analysis. With a solid background in software development, Henrik has acquired a rich understanding for both the technical and operational aspects of project delivery. This experience has given him a keen eye for striking the delicate balance between technical and operational trade offs.
     avatar: henrik_axelsson.jpg
     socials:
-      - icon_class: fa fa-linkedin
+      - icon_class: fa-linkedin
         url: https://au.linkedin.com/in/henrik-axelsson-7083b23
-    #   - icon_class: fa fa-twitter
+    #   - icon_class: fa-twitter
     #     url: https://twitter.com/
-    #   - icon_class: fa fa-facebook
+    #   - icon_class: fa-facebook
     #     url: http://facebook.com
 
   - name: Jamie Potter
@@ -219,7 +219,7 @@ people:
           <br/><br/>He’s been involved in numerous technology start-ups, expansions and exits. He uses his experience to help Cevo build scale into its delivery and operations.
     avatar: jamie_potter.jpg
     socials:
-      - icon_class: fa fa-linkedin
+      - icon_class: fa-linkedin
         url: https://au.linkedin.com/in/jamiewpotter
 
   - name: Ebony Worth
@@ -228,7 +228,7 @@ people:
     desc: Ebony is a self-starter, results-driven talent acquisition specialist, with strong communication and collaboration skills. She is a commercial, customer-focused individual that takes a progressive approach to talent attraction, which has seen her build and develop strategic business relationships within a range of matrix environments.
     avatar: ebony_worth.jpg
     socials:
-      - icon_class: fa fa-linkedin
+      - icon_class: fa-linkedin
         url: https://www.linkedin.com/in/ebonyw/
 
   - name: Rob Lugton
@@ -237,9 +237,9 @@ people:
     desc: Rob is a QA with a strong technical background. In his career he has done everything from Business Analyst to data analytics to delivery engineering alongside his QA role, and is comfortable talking to a variety of different stakeholders. He is interested in providing solutions and processes that deliver measurable, maintainable benefit to clients.
     avatar: rob_lugton.jpg
     socials:
-      - icon_class: fa fa-linkedin
+      - icon_class: fa-linkedin
         url: https://www.linkedin.com/in/rob-lugton-a2498719
-      - icon_class: fa fa-twitter
+      - icon_class: fa-twitter
         url: https://twitter.com/spirited_tester
 
   - name: Tom Partington
@@ -249,7 +249,7 @@ people:
           <br /><br />He is continuously learning, and is always excited by opportunities to share this knowledge.
     avatar: tom_partington.jpg
     socials:
-      - icon_class: fa fa-twitter
+      - icon_class: fa-twitter
         url: https://twitter.com/parmigiana
 
   - name: Casey Leask
@@ -258,9 +258,9 @@ people:
     desc: Casey has a passion for improving software development processes and helping companies deliver software faster through iterative releases and adapting agile concepts to match their needs.
     avatar: casey_leask.jpg
     socials:
-      - icon_class: fa fa-linkedin
+      - icon_class: fa-linkedin
         url: https://www.linkedin.com/in/casey-leask-099aa922
-      - icon_class: fa fa-twitter
+      - icon_class: fa-twitter
         url: https://twitter.com/caseyleask
 
   - name: Jason Keane
@@ -269,7 +269,7 @@ people:
     desc: Jason is an experienced agile technologist, with a passion to continually learn and further develop his skill set. He understands the need to constantly adapt to new environments and is experienced at working with broad stakeholder groups to produce the best outcomes.
     avatar: jason_keane.jpg
     socials:
-      - icon_class: fa fa-linkedin
+      - icon_class: fa-linkedin
         url: https://www.linkedin.com/in/jason-keane-03742512/
 
   - name: Stan Yudin
@@ -278,7 +278,7 @@ people:
     desc: Stan is a passionate, highly motivated and result driven technologist who is quite forward thinking in his approach to solving problems. He is continuously seeking knowledge and thrives on challenges. With a global perspective due to his previous experience Stan is a great cultural fit for organisations who need someone who can hit the ground running.
     avatar: stan_yudin.jpg
     socials:
-      - icon_class: fa fa-linkedin
+      - icon_class: fa-linkedin
         url: https://au.linkedin.com/in/stanly
 
   - name: Bhushan Manekar
@@ -287,7 +287,7 @@ people:
     desc: Bhushan has great passion for infrastructure automation, and continuous application delivery. He is also experienced in migrating applications & infrastructure to AWS. His ‘can-do’ attitude & inclination towards adapting new technologies is a great asset to companies looking for next generation IT infrastructure solutions.
     avatar: bhushan_manekar.jpg
     socials:
-      - icon_class: fa fa-linkedin
+      - icon_class: fa-linkedin
         url: https://www.linkedin.com/in/bhushanmanekar
 
   - name: Ranjeet Pethe
@@ -296,9 +296,9 @@ people:
     desc: Ranjeet is a multifaceted software consultant. He is extremely passionate about optimisation and strongly believes in 'Jugaad' and 'YAGNI'. He is always looking for opportunities to implement them. He has worked as an Iteration Manger, Test Strategist, Business Analyst and Team Lead among various other things, over the past two decades.
     avatar: ranjeet_pethe.jpg
     socials:
-      - icon_class: fa fa-linkedin
+      - icon_class: fa-linkedin
         url: https://www.linkedin.com/in/pethe/
-      - icon_class: fa fa-twitter
+      - icon_class: fa-twitter
         url: https://twitter.com/folourdream
 
   - name: Johnny Sammon
@@ -307,7 +307,7 @@ people:
     desc: Johnny enjoys to wear multiple hats in high performing Agile development teams. His career has been spent mainly in IM/BA and QA roles and he likes to coach others in these areas. Johnny is a people person keen to learn what motivates the people around him to build amazing team culture and in turn deliver value for the business.
     avatar: johnny_sammon.jpg
     socials:
-      - icon_class: fa fa-linkedin
+      - icon_class: fa-linkedin
         url: https://www.linkedin.com/in/johnny-sammon-74b21428
 
   - name: Grace Chilakamarri
@@ -316,7 +316,7 @@ people:
     desc: Grace is an experienced agile technologist, with a passion to deliver quality software. She has a keen interest for databases and automation of manual tasks. She believes that we are what we repeatedly do. She enjoys solving people problems and bringing teams together. Currently she is learning and understanding DevOps and trying to figure out how to solve people and technology problems in the Melbourne tech market.
     avatar: grace_chilakamarri.png
     socials:
-      - icon_class: fa fa-linkedin
+      - icon_class: fa-linkedin
         url: https://www.linkedin.com/in/reachgracie
 
   - name: Matt Elgin
@@ -325,7 +325,7 @@ people:
     desc: Matt Elgin is an experienced Sales Executive that has worked for some of our nation’s top multinational IT service providers and has also delivered sales growth for some exciting technology start-ups. Matt is known to build trusted relationships, ensuring his client’s needs and objectives are successfully met and has done so across a broad range of industries including utilities, logistics, healthcare, government and higher education.
     avatar: matt_elgin.png
     socials:
-      - icon_class: fa fa-linkedin
+      - icon_class: fa-linkedin
         url: https://www.linkedin.com/in/elginmatt
 
   - name: Sian Hughes
@@ -334,7 +334,7 @@ people:
     desc: Sian Hughes is an experienced marketing specialist, bringing a broad range of strategic and tactical skills from across the health and technology sectors both in Australia and the UK. Comfortable as the non-techie in tech environments, she has a hands-on approach to building a brand, delivering MarComms initiatives and communicating with a range of audiences across channels.
     avatar: sian_hughes.jpg
     socials:
-      - icon_class: fa fa-linkedin
+      - icon_class: fa-linkedin
         url: https://www.linkedin.com/in/sianehughes
 
   - name: Trystan Sykes
@@ -343,7 +343,7 @@ people:
     desc: Trystan has an extensive background in creating workable operational cultures, customer service and stakeholder engagement. He has only recently begun his journey as a developer but in a very short amount of time has displayed an aptitude and flair for software engineering. He loves solving interesting problems and excels at being an effective and calm communicator no matter the circumstance. 
     avatar: trystan_sykes.jpg
     socials:
-      - icon_class: fa fa-linkedin
+      - icon_class: fa-linkedin
         url: https://www.linkedin.com/in/trystan-sykes/                
 
   - name: Paul Borg
@@ -352,7 +352,7 @@ people:
     desc: Paul has a wide range of experience in IT across Database, System and Cloud Administration. His mantra is to "Automate All the Things" and strives to keep technology implementations simple, consumable and current. Though he considers himself forever a student of technology, his broad experience in the field makes him a highly skilled and knowledgable advisor.    
     avatar: paul_borg.jpg
     socials:
-      - icon_class: fa fa-linkedin
+      - icon_class: fa-linkedin
         url: https://www.linkedin.com/in/paulieborg/
 
 ---
