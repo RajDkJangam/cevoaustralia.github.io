@@ -28,7 +28,7 @@
 
 ## Build static html 
 
-* `make docker-html`
+* `make travis-ci`
 
   This will build in html like in CI based on your branch name. 
 
