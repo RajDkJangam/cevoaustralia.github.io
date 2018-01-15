@@ -1,0 +1,31 @@
+team:
+  name: Team Cevo
+  display_name: Team Cevo
+trent:
+  name: Trent Hornibrook
+  display_name: Trent
+  gravatar: 1111111
+  email: trent.hornibrook@cevo.com.au
+  twitter: mysqldbahelp
+  github: tnhtnh
+henrik:
+  name: Henrik Axelsson
+  display_name: Henrik
+hannah:
+  name: Hannah Browne
+  display_name: Hannah
+cmp:
+  display_name: Colin
+  name: Colin Panisset
+  email: colin.panisset@cevo.com.au
+  twitter: nonspecialist
+stevemac:
+  name: Steve Mactaggart
+  display_name: Steve-o from Cev-o
+tom:
+  name: Tom Partington
+  display_name: Tom
+sian:
+  name: Sian Hughes
+  display_name: Sian
+

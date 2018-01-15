@@ -21,15 +21,40 @@
             {{ ($.Scratch.Get "dateType").Format "January 2, 2006" }}
         </time>
         <div class="author">
-
-            {{ $url := replace (lower .Params.author) " " "_" }}
-            {{ $url := printf "img/team/%s.jpg" $url }}
-            {{ if .Params.linkedin }}
-                <a href="{{ .Params.linkedin }}"><img class="avatar img-circle hidden-sm" src="{{ $url | absURL }}"></a>
+            {{ $author := index .Site.Data.authors .Params.author }}
+            {{ if $author }}
+                {{ $.Scratch.Set "url" "#" }}
+                {{ if $author.gravatar }}
+                    {{ $url := printf "https://www.gravatar.com/avatar/%s" $author.gravatar }}
+                    {{ $.Scratch.Set "url" $url }}
+                {{ else }}
+                    {{ $url := replace (lower $author.name) " " "_" }}
+                    {{ $url := printf "img/team/%s.jpg" $url }}
+                    {{ $.Scratch.Set "url" $url }}
+                {{ end }}
+                
+                {{ $.Scratch.Set "profile" "#" }}
+                {{ if $author.github }}
+                    {{ $profile := printf "https://github.com/%s" $author.github }}
+                    {{ $.Scratch.Set "profile" $profile }}
+                {{ end }}
+                {{ if $author.linkedin }}
+                    {{ $profile := printf "https://linkedin.com/in/%s" $author.linkedin }}
+                    {{ $.Scratch.Set "profile" $profile }}
+                {{ end }}
+                {{ if $author.twitter }}
+                    {{ $profile := printf "https://twitter.com/%s" $author.twitter }}
+                    {{ $.Scratch.Set "profile" $profile }}
+                {{ end }}
+                
+                <a href="{{ $.Scratch.Get "profile" }}">
+                    <img class="avatar img-circle hidden-sm" src="{{ $.Scratch.Get "url" | absURL }}">
+                </a>
+                <p class="name">{{ $author.display_name }}</p>
             {{ else }}
-                <img class="avatar img-circle hidden-sm" src="{{ $url | absURL }}">
+                <!-- unknown person -->
+                <p class="name">{{ .Params.author }}</p>
             {{ end }}
-            <p class="name">{{ .Params.author }}</p>
         </div>
 
         {{ if .Site.Params.includeReadingTime }}
