@@ -10,7 +10,7 @@ categories:
 tags:
     - graphviz
     - discovery
-author: Colin Panisset
+author: cmp
 images: blog/mapping-systems-blog.png
 thumbnail: blog/mapping-systems-blog.png
 date: 2016-11-27

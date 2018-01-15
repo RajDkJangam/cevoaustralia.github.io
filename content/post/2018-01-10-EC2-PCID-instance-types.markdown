@@ -13,7 +13,7 @@ tags:
     - meltdown
     - kernel
     - performance
-author: Colin Panisset
+author: cmp
 excerpt: AWS' Shared Responsibility Model means that you are responsible for patching the operating system running on your EC2 instances, and this is where things get ... complicated.
 images: blog/meltdown.png
 thumbnail: blog/meltdown.png

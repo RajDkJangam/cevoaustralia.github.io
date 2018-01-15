@@ -7,7 +7,7 @@ categories:
     - development
 tags:
     - best-practice
-author: Steve Mactaggart
+author: stevemac
 images: blog/youre-doing-it-wrong-if.png
 thumbnail: blog/youre-doing-it-wrong-if.png
 date: 2017-01-18

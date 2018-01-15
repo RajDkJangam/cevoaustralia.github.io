@@ -7,7 +7,7 @@ categories:
 tags:
     - devops
     - video
-author: Tom Partington
+author: tom
 excerpt: This is an excerpt from a talk I gave at LASTConf Melbourne 2017 on Web Performance Optimisation.
 url: devops/2017/10/06/intro_to_wpo.html
 ---

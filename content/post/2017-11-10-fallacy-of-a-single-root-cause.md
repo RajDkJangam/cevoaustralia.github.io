@@ -6,7 +6,7 @@ categories:
     - devops
 tags:
     - devops
-author: Tom Partington
+author: tom
 excerpt: Think back to a successful deployment or a project and try and attribute the success to a single thing. It seems ridiculous, and that’s because it is. It’s easy to see that many things that had to go right for success.
 images: blog/bus-fire.jpg
 thumbnail: blog/bus-fire.jpg

@@ -7,7 +7,7 @@ categories:
 tags:
   - Cloud
   - System Architecture
-author: Steve Mactaggart
+author: stevemac
 images: blog/census-2.0.png
 thumbnail: blog/census-2.0.png
 excerpt:

@@ -7,7 +7,7 @@ categories:
 tags:
     - spot
     - cost
-author: Henrik Axelsson
+author: henrik
 images: blog/a-spot-of-aws.png
 thumbnail: blog/a-spot-of-aws.png
 date: 2017-02-23

@@ -7,7 +7,7 @@ categories:
     - News
 tags:
     - awards
-author: Sian Hughes
+author: sian
 excerpt: Cevo are delighted to have been awarded second place in the CRN Fast 50 and 40th in the Financial Review Fast Starters for 2017. 
 
 images: blog/crn-afr-award-banner.png

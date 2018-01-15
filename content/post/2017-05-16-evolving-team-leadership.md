@@ -7,7 +7,7 @@ categories:
 tags:
   - agile
   - transformation
-author: Steve Mactaggart
+author: stevemac
 images: blog/evolving-team-leadership.png
 thumbnail: blog/evolving-team-leadership.png
 date: 2017-05-16

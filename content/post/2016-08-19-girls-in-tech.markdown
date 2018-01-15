@@ -4,7 +4,7 @@ description: Cevo's Hannah Browne talks at Girls in Tech Australia about diversi
 date:   2016-08-19
 categories:
   - Community
-author: Hannah Browne
+author: hannah
 images: blog/girls-in-tech.png
 thumbnail: blog/girls-in-tech.png
 excerpt:

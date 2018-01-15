@@ -6,7 +6,7 @@ categories:
     - community
 tags:
     - women in tech
-author: Sian Hughes
+author: sian
 excerpt: Cevo's General Manager Hannah Browne on being the change we want to see in the world.
 images: blog/women-in-tech1.png
 thumbnail: blog/women-in-tech1.png

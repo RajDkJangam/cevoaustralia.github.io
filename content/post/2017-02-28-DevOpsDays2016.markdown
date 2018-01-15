@@ -7,7 +7,7 @@ categories:
 tags:
     - devops
     - video
-author: Team Cevo
+author: team
 images: blog/why-the-forgotten-word.png
 thumbnail: blog/why-the-forgotten-word.png
 date: 2017-02-28

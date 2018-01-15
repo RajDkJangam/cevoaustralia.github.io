@@ -6,7 +6,7 @@ categories:
     - devops
 tags:
     - devops
-author: Henrik Axelsson
+author: henrik
 images:
 thumbnail:
 excerpt:

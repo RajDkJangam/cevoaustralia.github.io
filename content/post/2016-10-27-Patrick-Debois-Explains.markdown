@@ -3,7 +3,7 @@ title:  Patrick Debois - 'What is DevOps?'
 date:   2016-10-27
 categories:
   - Community
-author: Team Cevo
+author: team
 images: blog/what-is-devops.png
 thumbnail: blog/what-is-devops.png
 excerpt:

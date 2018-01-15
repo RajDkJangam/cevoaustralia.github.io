@@ -8,7 +8,7 @@ categories:
     - communciation
 tags:
     - devops
-author: Trent Hornibrook
+author: trent
 images: blog/delorean.png
 thumbnail: blog/delorean.png
 excerpt:

@@ -6,7 +6,7 @@ categories:
     - culture
 tags:
     - devops
-author: Steve Mactaggart
+author: stevemac
 images: blog/the-four-values-of-a-devops-transformation.png
 thumbnail: blog/the-four-values-of-a-devops-transformation.png
 date: 2017-03-12

@@ -4,7 +4,7 @@ description: The challenges of AWS adoption to organisational structures, staffi
 date:   2016-11-24
 categories:
   - Enterprise
-author: Steve Mactaggart
+author: stevemac
 images: blog/enterprise-aws.png
 thumbnail: blog/enterprise-aws.png
 excerpt:

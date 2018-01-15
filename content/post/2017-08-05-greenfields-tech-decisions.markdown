@@ -9,7 +9,7 @@ categories:
 tags:
     - devops
     - leadership
-author: Trent Hornibrook
+author: trent
 images:
 
 excerpt:
