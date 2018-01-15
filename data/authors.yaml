@@ -4,10 +4,9 @@ team:
 trent:
   name: Trent Hornibrook
   display_name: Trent
-  gravatar: 1111111
   email: trent.hornibrook@cevo.com.au
   twitter: mysqldbahelp
-  github: tnhtnh
+  github: tnh
 henrik:
   name: Henrik Axelsson
   display_name: Henrik
@@ -28,4 +27,3 @@ tom:
 sian:
   name: Sian Hughes
   display_name: Sian
-
