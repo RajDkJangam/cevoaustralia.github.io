@@ -1,4 +1,4 @@
-Packer ---
+---
 title: "Replacing Packer With KitchenCI and a Rakefile"
 date: 2018-01-17T08:09:14+11:00
 description: An introduction to creating validated AMIs without using Packer.
