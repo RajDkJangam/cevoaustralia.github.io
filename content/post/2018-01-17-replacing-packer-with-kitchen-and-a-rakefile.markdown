@@ -1,7 +1,7 @@
----
-title: "Replacing Packer With Kitchen and a Rakefile"
+Packer ---
+title: "Replacing Packer With KitchenCI and a Rakefile"
 date: 2018-01-17T08:09:14+11:00
-description: An introduction to creating validated AMI's without using Packer.
+description: An introduction to creating validated AMIs without using Packer.
 categories:
     - devops
 tags:
@@ -13,32 +13,32 @@ tags:
     - packer
 author: Steve Mactaggart
 excerpt:
-    <p>Don't get me wrong, I love the Hashicorp products, I've been a Vagrant user way back in my BC (Before cloud) days and have continued a strong run of success backing the Hashicorp team. But the biggest issue I have is ensuring that the images created through packer are worthy of being promoted along a delivery pipeline.</p>
+    <p>Don't get me wrong, I love the HashiCorp products, I've been a Vagrant user since way back in my BC (Before cloud) days and have continued a strong run of success backing the HashiCorp team. But the biggest issue I have is ensuring that the images created through Packer are worthy of being promoted along a delivery pipeline.</p>
 
-    <p>This post is about using KitchenCI, Inspec and a small Rakefile to create an enhanced AWS Machine Image (AMI) creation and validation workflow.</p>
+    <p>This post is about using KitchenCI, InSpec and a small Rakefile to create an enhanced AWS Machine Image (AMI) creation and validation workflow.</p>
 
 ---
 
-Don't get me wrong, I love the Hashicorp products, I've been a Vagrant user way back in my BC (Before cloud) days and have continued a strong run of success backing the use of Hashicorp product. But the biggest issue I have is ensuring that the images created through packer are worthy of being promoted along a delivery pipeline.
+Don't get me wrong, I love the HashiCorp products, I've been a Vagrant user since way back in my BC (Before cloud) days and have continued a strong run of success backing the use of HashiCorp product. But the biggest issue I have is ensuring that the images created through Packer are worthy of being promoted along a delivery pipeline.
 
-This post is about using [KitchenCI](http://kitchen.ci/), [Inspec](https://www.inspec.io/) and a small Rakefile to create an enhanced AWS Machine Image (AMI) creation and validation workflow.
+This post is about using [KitchenCI](http://kitchen.ci/), [InSpec](https://www.inspec.io/) and a small Rakefile to create an enhanced AWS Machine Image (AMI) creation and validation workflow.
 
 
-## Ensuring valid AMI's
+## Ensuring valid AMIs
 
-In my [previous post](/testing/2017/07/23/test-driven-infrastructure-with-test-kitchen.html), I talked about using Kitchen and InSpec as a way to validate the output of a packer build by launching the image and running some tests.  This works really well as a first step into validated images, but has clunky workflow that requires the launch of 2 different EC2 instances. It also creates the AMI before it is actually validated.
+In my [previous post](/testing/2017/07/23/test-driven-infrastructure-with-test-kitchen.html), I talked about using KitchenCI and InSpec as a way to validate the output of a Packer build by launching the image and running some tests.  This works really well as a first step into validated images, but has a clunky workflow that requires the launch of 2 different EC2 instances. It also creates the AMI before it is actually validated.
 
-While this might not seem like a big issue, this violates the concept of having potentially invalid images - an artifact should not be created and available unless it is known good. With the current packer-based workflow we have an AMI that is not confirmed as good and no controls in place to ensure that it is not used until known good.
+While this might not seem like a big issue, this violates the concept of having potentially invalid images - an artifact should not be created and available un`less it is known good. With the current Packer-based workflow we have an AMI that is not confirmed as good and no controls in place to ensure that it is not used until known good.
 
 ## Rethinking our use of Packer
 
-Removing packer from the tool-chain is not a decision taken lightly, it does such a good job in easily defining details of the host images, run the provisioner, create the AMI, and even which accounts and regions the AMI is shared with - it just fails on the validation activity.
+Removing Packer from the tool-chain is not a decision taken lightly, it does such a good job in easily defining details of the host images, run the provisioner, create the AMI, and even which accounts and regions the AMI is shared with - it just fails on the validation activity.
 
-**How can we work with packer to achieve a confirmed quality outcome?**
+**How can we work with Packer to achieve a confirmed quality outcome?**
 
-One option is to have a separate AWS account that AMI's are built in, we could build it using packer, fire it up using KitchenCI and run InSpec tests to validate.  If the tests failed we could simply delete.
+One option is to have a separate AWS account that AMIs are built in. We could build an AMI using Packer, fire it up using KitchenCI and run InSpec tests to validate.  If the tests failed we could simply delete.
 
-This is the workflow we covered in the previous post, but then introduces the issue of not being able to use packers built in tooling to do sharing.  We need to control the sharing of the image to other accounts and regions until __after__ the image has been verified.
+This is the workflow we covered in the previous post, but then introduces the issue of not being able to use Packer's built in tooling to do sharing.  We need to restrict the sharing of the image to other accounts and regions until __after__ the image has been verified.
 
 That can be fixed too, sharing the image between regions and accounts is only a couple of API calls, so a simple Rakefile as such could get the job done easily.
 
@@ -102,15 +102,15 @@ Our workflow would now look like:
 1. `kitchen` to shutdown the test EC2 instance and cleanup
 1. `rake` copies the image between regions and accounts
 
-Nice and neat - we only need 3 configuration files, one for packer, one of kitchen and the Rakefile.
+Nice and neat - we only need 3 configuration files, one for Packer, one of KitchenCI and the Rakefile.
 
 ## Replacing Packer with Kitchen
 
-If we look at the difference between kitchen and packer in this workflow, they are basically doing the same thing, and while Kitchen can run a provisioner and tests, Packer can only run a provisioner.
+If we look at the difference between KitchenCI and Packer in this workflow, they are basically doing the same thing, and while KitchenCI can run a provisioner and tests, Packer can only run a provisioner.
 
-By using the provisioning capability of Kitchen the only activity we are left with is the creation of the AMI, and because Kitchen has multiple stages in its workflow we can drive it in a way that means we only get an AMI if the tests have passed.
+By using the provisioning capability of KitchenCI the only activity we are left with is the creation of the AMI, and because KitchenCI has multiple stages in its workflow we can drive it in a way that means we only get an AMI if the tests have passed.
 
-Adding another task to our Rakefile will extend the current Kitchen workflow to add in conditional creation of an AMI on success.
+Adding another task to our Rakefile will extend the current KitchenCI workflow to add in conditional creation of an AMI on success.
 
 
 **Rakefile with new `build` target**
@@ -159,11 +159,11 @@ task :build, [:os_label] do |_t, args|
 end
 ```
 
-We can now use the Kitchen development workflow to develop our server provisioning code, ensuring we provide sufficient testing along the way, and easily use that same codebase in our CI process to generate, validate and publish images between our accounts.
+We can now use the KitchenCI development workflow to develop our server provisioning code, ensuring we provide sufficient testing along the way, and easily use that same codebase in our CI process to generate, validate and publish images between our accounts.
 
 With this workflow you can maintain a single `kitchen.yml` file which contains the definitions for the provisioner and validation stages of image creation - and a simple and reusable `Rakefile` which can be wired into an CI/CD pipeline for reuse.
 
-By replacing our packer workflow with `Kitchen` and a `Rakefile` our workflow would now look like:
+By replacing our Packer workflow with KitchenCI and a Rakefile our workflow would now look like:
 
 1. `kitchen` to launch the EC2 instance
 1. `kitchen` to connect to and provision the server
@@ -228,19 +228,19 @@ platforms:
         - inspec/security
 ```
 
-Once you have this kitchen file in place you can build the different platform targets as below:
+Once you have this KitchenCI file in place you can build the different platform targets as below:
 
 ```
 bundle exec rake build[centos7]
 ```
 
-While this process looks a little more complex than using `packer` alone, you gain a number of new capabilities that are worth the extra complexity:
+While this process looks a little more complex than using Packer alone, you gain a number of new capabilities that are worth the extra complexity:
 
 1. A solid workflow that only allows **VALID** images to be created
 2. A single approach to build multiple operating system images
 3. Composable validation rules through the use of InSpec
 4. Feature compatible process that supports cross account and region Sharing
 
-It would be great if the Kitchen team took on the challenge to add the AMI/Sharing steps into their tool, there current position is that this requirement is beyond the scope of their tool.  
+It would be great if the KitchenCI team took on the challenge to add the AMI/Sharing steps into their tool, their current position is that this requirement is beyond the scope of their tool.  
 
 **Thats ok, for the rest of us we can use the simple Rakefile to extend Kitchen.**
