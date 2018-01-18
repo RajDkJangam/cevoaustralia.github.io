@@ -20,11 +20,6 @@ params:
     heading: This is not the page you're looking for
     text: Because there is nothing here
 
-  custom_css:
-    - css/post.css
-    - css/actions.css
-    - css/news.css
-
   taxonomies:
     tag: tags
     category: categories
