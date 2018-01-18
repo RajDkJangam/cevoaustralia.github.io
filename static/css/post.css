@@ -8,6 +8,10 @@
 		margin-top: 40px;
 	}
 
+	.draft {
+		background-color: lightblue;
+	}
+
 		.post > header {
 			display: -moz-flex;
 			display: -webkit-flex;

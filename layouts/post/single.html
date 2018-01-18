@@ -8,8 +8,11 @@
     {{ partial "nav" . }}
 
     <div class="container">
+      {{ if .Params.draft }}
+      <article class="post draft">
+      {{ else }}
       <article class="post">
-
+      {{ end }}
         {{ $.Scratch.Set "h1" true }}
         {{ .Render "header" }}
         {{ .Render "feature-img" }}
