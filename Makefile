@@ -3,6 +3,7 @@ TRAVIS_BRANCH?=$(shell git rev-parse --abbrev-ref HEAD)
 
 ifeq ($(TRAVIS_BRANCH),develop)
         BASE_URL=http://beta.cevo.com.au/
+        BUILD_DRAFTS="--buildDrafts"
 endif
 
 ifeq ($(TRAVIS_BRANCH),master)
@@ -10,10 +11,10 @@ ifeq ($(TRAVIS_BRANCH),master)
 endif
 
 run:
-	@hugo serve --baseUrl $(BASE_URL)
+	hugo serve --baseUrl $(BASE_URL) ${BUILD_DRAFTS}
 
 build:
-	@hugo --baseUrl $(BASE_URL)
+	hugo --baseUrl $(BASE_URL) ${BUILD_DRAFTS}
 
 default: build
 
