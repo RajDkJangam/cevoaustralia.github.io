@@ -30,6 +30,7 @@ build:
 default: build
 
 clean:
+	npm run clean
 	rm -fr ./public
 
 #
