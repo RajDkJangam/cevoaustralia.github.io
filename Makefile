@@ -30,7 +30,7 @@ docker-image:
 
 travis-ci: docker-image
 	docker run -v $(PWD):/data -w /data \
-		-e BASE_URL=$(BASE_URL) \
+		-e BASE_URL=$(BASE_URL) -e BUILD_DRAFTS=$(BUILD_DRAFTS) \
 		hugo:latest make build
 
 .PHONY: all clean dev alpha beta prod
