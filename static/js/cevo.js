@@ -53,6 +53,12 @@ $(document).ready(function(){
     }
   });
 
+  // Handle selected case-study
+  if (window.location.hash && window.location.hash.indexOf('#case-study') != -1) {
+    $(window.location.hash).modal('toggle');
+  }
+
+  // Random testimonials
   showRandomTestimonial();
   window.setInterval(showRandomTestimonial, 10000);
 });

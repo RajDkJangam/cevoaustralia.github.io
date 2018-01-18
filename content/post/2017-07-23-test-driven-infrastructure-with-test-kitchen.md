@@ -209,3 +209,5 @@ Kitchen supports altering from the default behaviours by appending `--destroy=al
 As demands the on teams to deliver increase, and systems grow in size and complexity, ensuring we have a way to scale out our approach to quality and validation is critical.  
 
 Through introducing [Kitchen](http://kitchen.ci/) and [InSpec](https://www.inspec.io/) to your toolkit you will be well positioned to have confidence that the systems you build work to specification, and continue to align with these requirements as time goes by.
+
+A new post discuses extending this approach to [replace packer entirely](/post/2017-11-22-replacing-packer-with-kitchen-and-a-rakefile/) 
