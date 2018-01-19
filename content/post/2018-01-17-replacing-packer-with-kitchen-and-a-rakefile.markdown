@@ -1,5 +1,5 @@
 ---
-draft: true
+
 title: "Replacing Packer With KitchenCI and a Rakefile"
 date: 2018-01-17T08:09:14+11:00
 description: An introduction to creating validated AMIs without using Packer.
@@ -14,13 +14,13 @@ tags:
     - packer
 author: Steve Mactaggart
 excerpt:
-    <p>Don't get me wrong, I love the HashiCorp products, I've been a Vagrant user since way back in my BC (Before cloud) days and have continued a strong run of success backing the HashiCorp team. But the biggest issue I have is ensuring that the images created through Packer are worthy of being promoted along a delivery pipeline.</p>
+    <p>Don't get me wrong, I love the HashiCorp products. I've been a Vagrant user since way back in my BC (Before Cloud) days and have continued a strong run of success backing the HashiCorp team. But the biggest issue I have is ensuring that the images created through Packer are worthy of being promoted along a delivery pipeline.</p>
 
     <p>This post is about using KitchenCI, InSpec and a small Rakefile to create an enhanced AWS Machine Image (AMI) creation and validation workflow.</p>
 
 ---
 
-Don't get me wrong, I love the HashiCorp products, I've been a Vagrant user since way back in my BC (Before cloud) days and have continued a strong run of success backing the use of HashiCorp product. But the biggest issue I have is ensuring that the images created through Packer are worthy of being promoted along a delivery pipeline.
+Don't get me wrong, I love the HashiCorp products. I've been a Vagrant user since way back in my BC (Before Cloud) days and have continued a strong run of success backing the use of HashiCorp product. But the biggest issue I have is ensuring that the images created through Packer are worthy of being promoted along a delivery pipeline.
 
 This post is about using [KitchenCI](http://kitchen.ci/), [InSpec](https://www.inspec.io/) and a small Rakefile to create an enhanced AWS Machine Image (AMI) creation and validation workflow.
 
@@ -29,7 +29,7 @@ This post is about using [KitchenCI](http://kitchen.ci/), [InSpec](https://www.i
 
 In my [previous post](/testing/2017/07/23/test-driven-infrastructure-with-test-kitchen.html), I talked about using KitchenCI and InSpec as a way to validate the output of a Packer build by launching the image and running some tests.  This works really well as a first step into validated images, but has a clunky workflow that requires the launch of 2 different EC2 instances. It also creates the AMI before it is actually validated.
 
-While this might not seem like a big issue, this violates the concept of having potentially invalid images - an artifact should not be created and available un`less it is known good. With the current Packer-based workflow we have an AMI that is not confirmed as good and no controls in place to ensure that it is not used until known good.
+While it might not seem like a big issue, this leaves us with potentially invalid images - an artefact should not however be created and available unless it is known good. With the current Packer-based workflow we have an AMI that is not confirmed as good and no controls in place to ensure that it is not used until known good.
 
 ## Rethinking our use of Packer
 
