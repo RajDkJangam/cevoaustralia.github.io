@@ -14,7 +14,7 @@
       <div class="col-lg-12">
         <ul class="timeline">
 
-          {{ range $i, $e := .Params.events }}
+          {{ range $i, $e := .Site.Data.cevo.history.events }}
             <li {{ if (not (modBool $i 2)) }}class="timeline-inverted" {{ end }}>
               <div class="timeline-image">
                 {{ $url := printf "img/about/%s" .img }}
@@ -35,9 +35,7 @@
           <li class="timeline-inverted">
             <a href="#contact">
             <div class="timeline-image">
-
-                <h4>{{ .Params.endpoint | markdownify }}</h4>
-
+                <h4>{{ .Site.Data.cevo.history.endpoint | markdownify }}</h4>
             </div>
             </a>
           </li>
