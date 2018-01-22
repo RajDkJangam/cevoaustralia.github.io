@@ -313,7 +313,7 @@ people:
   - name: Sharath Parsam S
     sort: 2018-01-22
     position: Software Developer
-    desc: Sharath is an experienced agile technologist, presuming his interests as a software developer and strives towards learning new technologies, skills and adapting to new environments. He is good in architecting inventive solutions in line with project requirements. He has an engaging communication skill in building positive relationships with both business and technical audiences.
+    desc: Sharath is an experienced agile technologist. He strives toward learning new technologies, skills and adapting to new environments. His strength is in architecting inventive solutions aligned with business goals. He values building positive relationships with both business and technical audiences.
     avatar: Sharath_Parsam.jpg
     socials:
       - icon_class: fa-linkedin
