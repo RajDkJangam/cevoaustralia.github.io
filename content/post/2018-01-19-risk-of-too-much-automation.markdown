@@ -1,16 +1,16 @@
 ---
 draft: true
 title: "Is there such a thing as too much automation?"
-date: 2018-01-19T09:00:14+11:00
-description: 
+date: 2018-01-22
+description: "Thinking of automation as a competitive cognitive artifact, and on ways to minimise the associated risks"
 categories:
     - automation
 tags:
     - automation
 author: Tom Partington
-excerpt:
+excerpt: "Automation is fantastic for many reasons - it saves time, reduces errors, and enables people to perform extremely complex tasks with little to no understanding of what is being done directly. But by automating everything are we setting ourselves up for disaster? What happens when something goes wrong and the people who built the automation have all left?"
 ---
-A recent post holiday discussion at Cevo HQ came onto the topic of satellite navigation and how lost we would be without it, how in the good old days of street directories you were generally only lost the first time you travelled to a new location. This led on to a discussion of the work of [David Krakauer](https://www.santafe.edu/people/profile/david-krakauer) and the concepts of complementary and competitive [cognitive artifacts](http://nautil.us/blog/will-ai-harm-us-better-to-ask-how-well-reckon-with-our-hybrid-nature).
+A recent discussion at Cevo HQ came onto the topic of satellite navigation and how lost we would be without it, how in the good old days of street directories you were generally only lost the first time you travelled to a new location. This led on to a discussion of the work of [David Krakauer](https://www.santafe.edu/people/profile/david-krakauer) and the concepts of complementary and competitive [cognitive artifacts](http://nautil.us/blog/will-ai-harm-us-better-to-ask-how-well-reckon-with-our-hybrid-nature).
 
 A complementary cognitive artifact is something which you learn from. A map is a great example, when you study one it improves your mental model of an area and this understanding mostly remains even when the technology itself is taken away. Similarly, people who become experts at using an abacus can use a mental model of one to perform extraordinary calculations without the physical device. In this way these technologies compliment our own mental abilities.
 
@@ -32,11 +32,11 @@ and while this is useful we can make this much more valuable by including the de
 ```bash
 	# restarting web-server: sudo systemctl restart nginx
 ```
-Sure we could look at the source of the script to find this command, but typically we’d only do this when something had gone wrong, and if we’re already familiar with the details when that happens then we have put ourselves at a great advantage.
+While this doesn't force us to learn the steps in quite the same way as if we had no automation, we are no longer hiding the details away, which will give us a better idea of what is happening. Should something go wrong we'll no longer need to dig through the source code to find out (possibly for the first time) what the script was doing.
 
 #### Preventing skills atrophy from relying on automation
 
-Another method to prevent automation from limiting our understanding of our systems is to occasionally go without it. In the same way the pilots are required to spend a certain number of hours in a simulator to keep their skills fresh we should be encouraging the same of our engineers in the form of [Game Days](https://queue.acm.org/detail.cfm?id=2371297). During a Game Day a fault is purposefully introduced into a system, giving responders an opportunity to practice incident response and debugging techniques in a low stress environment, so that they are more easily able to rely on these same skills during a higher stress time, such as at 3am during a full production outage.
+Another method to prevent automation from limiting our understanding of our systems is to occasionally go without it. In the same way the pilots are required to spend a certain number of hours in a simulator to keep their skills fresh we should be encouraging the same of our engineers in the form of [Game Days](https://queue.acm.org/detail.cfm?id=2371297). During a Game Day a fault is purposefully introduced into a system, one of the benefits is that it gives responders an opportunity to practice incident response and debugging techniques in a low stress environment, so that they are more easily able to use these skills during a higher stress time, such as at 3am during a full production outage.
 
 #### Accepting automation as a competitive cognitive artifact
 
