@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
-
+  {{ $.Scratch.Set "post" true }}
   {{ partial "head.html" . }}
 
   <body id="page-top" class="index">
