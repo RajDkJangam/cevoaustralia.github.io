@@ -355,4 +355,12 @@ people:
       - icon_class: fa-linkedin
         url: https://www.linkedin.com/in/paulieborg/
 
+  - name: Guillaume Genevrier
+    sort: 2018-01-22
+    position: Software Engineer
+    desc: Guillaume had exposure to both system engineering and software development. He had opportunity to work with different teams as a lead where his communication skills allowed him to gradually implemented agile methodology, focusing on rapid delivery and reliability. He joined Cevo to extend his Devop skillset and to learn better agile practices.
+    avatar: guillaume_genevrier.jpg
+    socials:
+      - icon_class: fa-linkedin
+        url: https://www.linkedin.com/in/guillaumegenevrier/
 ---
