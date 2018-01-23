@@ -313,7 +313,7 @@ people:
   - name: Sharath Parsam S
     sort: 2018-01-22
     position: Software Developer
-    desc: Sharath is an experienced agile technologist, presuming his interests as a software developer and strives towards learning new technologies, skills and adapting to new environments. He is good in architecting inventive solutions in line with project requirements. He has an engaging communication skill in building positive relationships with both business and technical audiences.
+    desc: Sharath is an experienced agile technologist. He strives toward learning new technologies, skills and adapting to new environments. His strength is in architecting inventive solutions aligned with business goals. He values building positive relationships with both business and technical audiences.
     avatar: Sharath_Parsam.jpg
     socials:
       - icon_class: fa-linkedin
@@ -367,7 +367,7 @@ people:
   - name: Guillaume Genevrier
     sort: 2018-01-22
     position: Software Engineer
-    desc: Guillaume had exposure to both system engineering and software development. He had opportunity to work with different teams as a lead where his communication skills allowed him to gradually implemented agile methodology, focusing on rapid delivery and reliability. He joined Cevo to extend his Devop skillset and to learn better agile practices.
+    desc: Guillaume has had exposure to both systems engineering and software development. He has led different teams where his communication skills allowed him to gradually implement agile methodologies that focus on rapid delivery and reliability. He joined Cevo to extend his DevOps skillset and to enhance his toolbox of agile practices.
     avatar: guillaume_genevrier.jpg
     socials:
       - icon_class: fa-linkedin

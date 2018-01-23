@@ -8,6 +8,10 @@
 		margin-top: 40px;
 	}
 
+	hr {
+	  border-top: 1px solid #ccc;
+	}
+
 	.draft {
 		background-color: lightblue;
 	}
