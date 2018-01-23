@@ -34,7 +34,7 @@ ul.actions {
     }
 
     ul.actions.pagination .next:after {
-      content: '\f054';
+      content: ' >';
     }
 
   ul.actions.pagination .previous {
@@ -52,7 +52,7 @@ ul.actions {
     }
 
     ul.actions.pagination .previous:before {
-      content: '\f053';
+      content: '< ';
     }
 
   @media screen and (max-width: 1280px) {
