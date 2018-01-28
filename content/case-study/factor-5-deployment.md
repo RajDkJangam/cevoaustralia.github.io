@@ -1,5 +1,5 @@
 ---
-title: DevOps with ServiceNow
+title: Using DevOps to improve deployments
 client: Factor5™ Software
 clientLink: "https://www.factor5.com.au/"
 cases: engineering
@@ -21,4 +21,4 @@ The team kicked off with a series of investigative workshops and quickly realise
 
 # Benefits
 
-The Factor5 team is now able to conduct deployments of Courseloop much quicker than before. Importantly they have the confidence that deployments will occur without issue and no longer depend on human intervention. These improvements in the way Courseloop is built and deployed can also be applied to future product offerings where applicable, helping maintain efficiencies and manage team workflow.
+The Factor5 team is now able to conduct deployments of Courseloop much quicker than before. Importantly, they have the confidence that deployments will occur without issue and no longer depend on human intervention. These improvements in the way Courseloop is built and deployed can also be applied to future product offerings where applicable, helping maintain efficiencies and manage team workflow.
