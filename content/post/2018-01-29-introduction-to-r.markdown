@@ -1,8 +1,7 @@
 ---
 title: "Introduction to R"
-date: 2018-01-18T08:09:14+11:00
+date: 2018-01-29T08:09:14+11:00
 description: Exploring EC2 pricing data using R
-draft: true
 categories:
     - data analysis
 tags:
@@ -16,16 +15,16 @@ excerpt:
 
     Luckily R exists and can do the job really well!
 
-    In this post I'll run through some of the features of R and produce a nicely formatted CSV of on demand EC2 pricing data.
+    In this post I'll run through some of the features of R and produce a nicely formatted CSV of on-demand EC2 pricing data.
 ---
 
-R is great for doing any kind of slicing and dicing with data. However the barrier to entry can be high, especially for people that come from a non-data background. I know that it took me quite some time to grasp just how R does it's magic. When you do though, it really is a "that's damn awesome" moment.
+R is great for doing any kind of slicing and dicing with data. However the barrier to entry can be high, especially for people that come from a non-data background. I know that it took me quite some time to grasp just how R does its magic. When you do though, it really is a "that's damn awesome" moment.
 
-Rather than running through all of the basics of R, I put together a script that takes you through some of the features of R in the context of analysing EC2 pricing data.
+Rather than running through all of the basics of R, I put together a script that takes you through some of the features in the context of analysing EC2 pricing data.
 
-The script in the code block below can run from beginning to end by an R interpreter. However I would suggest to get the most from it run each command one at a time, look at the output and perhapd have a look at the documentation for the commands run. RStudio provides a really nice (and free) development environment to use. You can get it from here: https://www.rstudio.com
+The script in the code block below can run from beginning to end by an R interpreter. However I would suggest that to get the most from it, run each command one at a time, look at the output and perhaps have a look at the documentation for the commands run. RStudio provides a really nice (and free) development environment to use. You can get it from here: https://www.rstudio.com
 
-So after you've installed RStudio, dive into the script below!
+So, after you've installed RStudio, dive into the script below!
 
 ```
 ## R pricing fun
@@ -40,7 +39,7 @@ So after you've installed RStudio, dive into the script below!
 
 ## Lets get some data to look at.
 
-## First need to set our working directory, can do this from the RStudio menus
+## First we need to set our working directory, you can do this from the RStudio menus
 ## Go to Session -> Set Working Directory
 ## Or by running setwd("path")
 
@@ -172,7 +171,7 @@ typeof(pricing_header[[1]])
 ## Using double square brackets will extract the vector out of the first list element.
 
 ## When dealing with large data sets, it's much faster to only load the columns you are
-## interested in. This is why we loaded the first 100 rows to have a poke a round with
+## interested in. This is why we loaded the first 100 rows to have a poke around with
 ## first before loading the whole file.
 
 ## There are 66 columns in the table, we don't want them all!
@@ -254,7 +253,7 @@ filtered_data
 ## so let chop down some of the columns
 output_data <- filtered_data[,c('Instance.Type', 'TermType', 'Operating.System', 'PricePerUnit')]
 
-## We might also want to change the  names that are written out
+## We might also want to change the names that are written out
 names(output_data) <- c('instance_type', 'term_type', 'os', 'price')
 
 ## R assigns row names too, which by default are the row numbers.
