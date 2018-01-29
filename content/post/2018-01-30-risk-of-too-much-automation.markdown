@@ -1,7 +1,7 @@
 ---
 draft: true
 title: "Is there such a thing as too much automation?"
-date: 2018-01-22
+date: 2018-01-30
 description: "Thinking of automation as a competitive cognitive artifact, and on ways to minimise the associated risks"
 categories:
     - automation
