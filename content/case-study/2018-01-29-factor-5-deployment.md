@@ -1,5 +1,6 @@
 ---
 title: Using DevOps to improve deployments
+date: 2018-01-29
 client: Factor5™ Software
 clientLink: "https://www.factor5.com.au/"
 cases: engineering

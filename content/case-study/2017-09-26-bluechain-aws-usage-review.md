@@ -1,5 +1,6 @@
 ---
 title: "CloudFormation and CloudWatch and CloudTrail: building skills in AWS"
+date: 2017-09-26
 subtitle: Fully utilising the functionality of Amazon Web Services
 client: Financial Technology
 clientLink: https://www.bluechain.com

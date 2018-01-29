@@ -1,5 +1,6 @@
 ---
 title: 20% Decrease in Load Time
+date: 2017-10-23
 client: Online Employment Services
 clientLink: #
 cases: engineering

@@ -1,5 +1,6 @@
 ---
 title: Roadmap to better website performance
+date: 2018-01-09
 client: Online Retail
 clientLink: "#"
 cases: engineering

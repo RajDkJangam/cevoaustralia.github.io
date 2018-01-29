@@ -1,5 +1,6 @@
 ---
 title: Watchmen - Collaborating with Security and APRA to migrate applications to AWS
+date: 2018-01-23
 client: IAG
 clientLink: "#"
 cases: cloud

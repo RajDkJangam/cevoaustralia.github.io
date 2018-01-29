@@ -1,5 +1,6 @@
 ---
 title: How migrating to AWS delivered automated infrastructure, self-servicing capabilities & reduced costs
+date: 2016-08-08
 client: MYOB
 clientLink: "#"
 cases: devops

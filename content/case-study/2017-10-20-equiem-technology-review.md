@@ -1,6 +1,7 @@
 ---
 title: Technology Review
 subtitle: Customer-focused changes to the digital platform
+date: 2017-10-20
 client: Start-up
 cases: engineering
 clientLink: "#"
