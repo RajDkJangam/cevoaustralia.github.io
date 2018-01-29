@@ -20,7 +20,7 @@
                 <div id="content">
                   {{ .Content | markdownify }}
                 </div>
-              <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> {{ with $.Site.Params.portfolio.modal.buttonText }}{{ . }}{{ end }}</button>
+              <button type="button" class="btn btn-primary" data-dismiss="modal"><b class="fa fa-times">X</b> {{ with $.Site.Params.portfolio.modal.buttonText }}{{ . }}{{ end }}</button>
               <footer>
                 <ul class="stats">
                   <li>Client: {{ .Params.client | markdownify }}</li>
