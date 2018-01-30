@@ -14,7 +14,7 @@
             <h3 class="section-subheading text-muted">{{ with .Site.Params.casestudies.subtitle }}{{ . | markdownify }}{{ end }}</h3>
           </div>
         </div>
-        <div class="case-row row">
+        <div class="case-flex-row row">
 
           {{ range $i, $s := .Data.Pages }}
               {{ .Scratch.Set "index" $i }}

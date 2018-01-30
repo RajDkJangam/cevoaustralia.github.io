@@ -427,22 +427,22 @@ section h3.section-subheading {
     }
 }
 
-.case-row {
+.case-flex-row {
   display: flex;
   align-content: space-between;
   flex-flow: row wrap;
   justify-content: center;
 }
 
+.case-flex-item {
+  flex: 0 0 310px;
+  margin-bottom: 30px;
+}
+
 .service-heading {
     margin: 15px 0;
     text-transform: none;
     text-decoration: underline;
-}
-
-.portfolio-item-space {
-    margin: 30px auto;
-    position: relative;
 }
 
 #portfolio .portfolio-item {
