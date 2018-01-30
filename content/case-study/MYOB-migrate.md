@@ -5,6 +5,7 @@ clientLink: "#"
 cases: devops
 img: myob.png
 banner: myob-migrate-case-study2.png
+anchor: case-study-3
 
 ---
 # Industry
