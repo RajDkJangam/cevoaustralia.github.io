@@ -16,8 +16,7 @@
         </div>
         <div class="case-flex-row row">
 
-          {{ range $i, $s := .Data.Pages }}
-              {{ .Scratch.Set "index" $i }}
+          {{ range .Data.Pages }}
               {{ .Render "content-list" }}
           {{ end }}
 
@@ -25,8 +24,7 @@
       </div>
     </section>
 
-    {{ range $i, $s := .Data.Pages }}
-        {{ .Scratch.Set "index" $i }}
+    {{ range .Data.Pages }}
         {{ .Render "content-modal" }}
     {{ end }}
 
