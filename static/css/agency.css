@@ -427,16 +427,31 @@ section h3.section-subheading {
     }
 }
 
+.case-row {
+  display: flex;
+  align-content: space-between;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
 .service-heading {
     margin: 15px 0;
     text-transform: none;
     text-decoration: underline;
 }
 
+.portfolio-item-space {
+    margin: 30px auto;
+    position: relative;
+}
+
 #portfolio .portfolio-item {
     right: 0;
     margin: 30px auto;
     max-width: 400px;
+    border: 1px solid lightgrey;
+    background: rgba(255,255,255,1);
+    height: 100%;
 }
 
 #portfolio .portfolio-item .portfolio-link {
