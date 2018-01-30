@@ -1,7 +1,11 @@
 
 <div class="col-md-4 col-sm-6 case-flex-item">
   <div class="portfolio-item">
-    <a href="#case-study-{{ .Scratch.Get "index" }}" class="portfolio-link" data-toggle="modal">
+    {{ if .Params.anchor }}
+      <a href="#{{ .Params.anchor }}" class="portfolio-link" data-toggle="modal">
+    {{ else }}
+      <a href="#case-study-{{ urlize .Params.title }}" class="portfolio-link" data-toggle="modal">
+    {{ end }}
       <div class="portfolio-hover">
         <div class="portfolio-hover-content">
         </div>

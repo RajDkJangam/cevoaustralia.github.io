@@ -5,6 +5,7 @@ clientLink: "#"
 cases: cloud
 img: iag.png
 banner: IAG-Watchmen.png
+anchor: case-study-6
 ---
 # Industry
 
