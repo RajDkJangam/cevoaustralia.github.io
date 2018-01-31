@@ -4,7 +4,10 @@ date: 2018-01-31T08:07:00+11:00
 description:
     Time to show what you've got
 categories:
+    - agile
 tags:
+    - showcasing
+    - team rituals
 draft: true
 author: Henrik Axelsson
 excerpt:
