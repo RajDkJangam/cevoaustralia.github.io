@@ -1,4 +1,8 @@
-<div class="portfolio-modal modal fade" id="case-study-{{ .Scratch.Get "index" }}" tabindex="-1" role="dialog" aria-hidden="true">
+{{ if .Params.anchor }}
+  <div class="portfolio-modal modal fade" id="{{ .Params.anchor }}" tabindex="-1" role="dialog" aria-hidden="true">
+{{ else }}
+  <div class="portfolio-modal modal fade" id="case-study-{{ urlize .Params.title }}" tabindex="-1" role="dialog" aria-hidden="true">
+{{ end }}
   <div class="modal-content">
     <div class="close-modal" data-dismiss="modal">
       <div class="lr">
