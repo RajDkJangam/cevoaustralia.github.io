@@ -427,8 +427,22 @@ section h3.section-subheading {
     }
 }
 
-.testimonial-icon div{
+.testimonial-panel {
+  margin: 17px;
+  padding: 15px;
+  border: solid lightgray 1px
+}
+
+.testimonial-icon-container {
   height: 70px
+}
+
+.testimonial-icon {
+  max-width: 150px;
+  max-height: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .case-flex-row {
