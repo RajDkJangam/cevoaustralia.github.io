@@ -21,7 +21,11 @@
 
     </a>
     <div class="portfolio-caption">
-        <h4>{{ .Params.title | markdownify }}</h4>
+      {{ if .Params.anchor }}
+        <h4><a href="#{{ .Params.anchor }}" data-toggle="modal">{{ .Params.title | markdownify }}</a></h4>
+      {{ else }}
+        <h4><a href="#case-study-{{ urlize .Params.title }}" data-toggle="modal">{{ .Params.title | markdownify }}</a><h4>
+      {{ end }}
         <p class="text-muted">
           {{ with .Params.cases }}
             <a href="{{ add "/cases/" . | urlize }}">
