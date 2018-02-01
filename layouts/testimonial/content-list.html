@@ -5,7 +5,8 @@
       <img src="{{ $url | absURL }}" alt="" class="testimonial-icon">
     {{ end }}
   </div>
-    <p>{{ .Content | markdownify }}</p>
+    <img src="{{ "img/quotes.png" | absURL }}" alt="" class="testimonial-quote-image">
+    <div>{{ .Content | markdownify }}</div>
 
     <footer>
         <ul class="actions">

@@ -445,6 +445,13 @@ section h3.section-subheading {
   margin-right: auto;
 }
 
+.testimonial-quote-image {
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  max-width: 50px
+}
+
 .case-flex-row {
   display: flex;
   align-content: space-between;

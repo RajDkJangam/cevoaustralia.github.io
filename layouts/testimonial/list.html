@@ -7,7 +7,7 @@
     {{ partial "nav" . }}
     <header class="hero small-header"></header>
     <div class="container">
-      <h1>What our customers say about our services</h1>
+      <h1 style="text-align: center;">What our customers say about our services</h1>
         <div class="case-flex-row">
         {{ range .Data.Pages }}
             {{ .Render "content-list" }}
