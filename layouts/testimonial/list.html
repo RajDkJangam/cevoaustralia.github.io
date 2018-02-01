@@ -3,14 +3,16 @@
 
   {{ partial "head" . }}
 
-  <body id="page-top">
+  <body id="page-top" class="bg-light-gray">
     {{ partial "nav" . }}
     <header class="hero small-header"></header>
     <div class="container">
       <h1>What our customers say about our services</h1>
-      {{ range .Data.Pages }}
-          {{ .Render "content-list" }}
-      {{ end }}
+        <div class="case-flex-row">
+        {{ range .Data.Pages }}
+            {{ .Render "content-list" }}
+        {{ end }}
+      </div>
     </div>
     {{ partial "contact" . }}
     {{ partial "footer" . }}
