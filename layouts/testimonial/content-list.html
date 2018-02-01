@@ -1,8 +1,8 @@
 <article class="post case-flex-item" style="margin: 17px; padding: 15px; border: solid lightgray 1px">
-  <div class="testimonial-icon" style="display: block; margin-left: auto; margin-right: auto; height: 70px">
+  <div class="testimonial-icon" style="height: 70px">
     {{ if .Params.img }}
       {{ $url := printf "img/logos/%s" .Params.img }}
-      <img src="{{ $url | absURL }}" alt="" style="max-height: 50px">
+      <img src="{{ $url | absURL }}" alt="" style="max-width: 150px; max-height: 50px; display: block; margin-left: auto; margin-right: auto; ">
     {{ end }}
   </div>
     <p>{{ .Content | markdownify }}</p>
