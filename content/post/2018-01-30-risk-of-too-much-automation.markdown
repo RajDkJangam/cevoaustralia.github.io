@@ -9,6 +9,8 @@ tags:
     - automation
 author: Tom Partington
 excerpt: "Automation is fantastic for many reasons - it saves time, reduces errors, and enables people to perform extremely complex tasks with little to no understanding of what is being done directly. But by automating everything are we setting ourselves up for disaster? What happens when something goes wrong and the people who built the automation have all left?"
+images: blog/too-much-automation.jpg
+thumbnail: blog/too-much-automation.jpg
 ---
 A recent discussion at Cevo HQ came onto the topic of satellite navigation and how lost we would be without it, how in the good old days of street directories you were generally only lost the first time you travelled to a new location. This led on to a discussion of the work of [David Krakauer](https://www.santafe.edu/people/profile/david-krakauer) and the concepts of complementary and competitive [cognitive artifacts](http://nautil.us/blog/will-ai-harm-us-better-to-ask-how-well-reckon-with-our-hybrid-nature).
 
