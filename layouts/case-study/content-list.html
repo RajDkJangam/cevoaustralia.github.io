@@ -1,25 +1,38 @@
-<div class="col-md-4 col-sm-6 portfolio-item">
-  <a href="#case-study-{{ .Scratch.Get "index" }}" class="portfolio-link" data-toggle="modal">
-    <div class="portfolio-hover">
-      <div class="portfolio-hover-content">
-      </div>
-    </div>
-    {{ if .Params.img }}
-      {{ $url := printf "img/case-study/%s" .Params.img }}
-      <img src="{{ $url | absURL }}" class="img-responsive" alt="">
-    {{ else }}
-      <img src="{{ "/img/case-study/placeholder.png" | absURL }}" class="img-responsive" alt="">
-    {{ end }}
 
-  </a>
-  <div class="portfolio-caption">
-      <h4>{{ .Params.title | markdownify }}</h4>
-      <p class="text-muted">
-        {{ with .Params.cases }}
-          <a href="{{ add "/cases/" . | urlize }}">
-            {{ . | humanize }}
-          </a>
-        {{ end }}
-      </p>
+<div class="col-md-4 col-sm-6 case-flex-item">
+  <div class="portfolio-item">
+    {{ if .Params.anchor }}
+      <a href="#{{ .Params.anchor }}" class="portfolio-link" data-toggle="modal">
+    {{ else }}
+      <a href="#case-study-{{ urlize .Params.title }}" class="portfolio-link" data-toggle="modal">
+    {{ end }}
+      <div class="portfolio-hover">
+        <div class="portfolio-hover-content">
+        </div>
+      </div>
+      <div>
+      {{ if .Params.img }}
+        {{ $url := printf "img/case-study/%s" .Params.img }}
+        <img src="{{ $url | absURL }}" class="img-responsive case-study-icon" alt="">
+      {{ else }}
+        <img src="{{ "/img/case-study/placeholder.png" | absURL }}" class="img-responsive" alt="">
+      {{ end }}
+    </div>
+
+    </a>
+    <div class="portfolio-caption">
+      {{ if .Params.anchor }}
+        <h4><a href="#{{ .Params.anchor }}" data-toggle="modal">{{ .Params.title | markdownify }}</a></h4>
+      {{ else }}
+        <h4><a href="#case-study-{{ urlize .Params.title }}" data-toggle="modal">{{ .Params.title | markdownify }}</a><h4>
+      {{ end }}
+        <p class="text-muted">
+          {{ with .Params.cases }}
+            <a href="{{ add "/cases/" . | urlize }}">
+              {{ . | humanize }}
+            </a>
+          {{ end }}
+        </p>
+    </div>
   </div>
 </div>

@@ -1,10 +1,17 @@
-<article class="post">
-    <p>{{ .Content | markdownify }}</p>
+<article class="post case-flex-item testimonial-panel">
+  <div class="testimonial-icon-container">
+    {{ if .Params.img }}
+      {{ $url := printf "img/logos/%s" .Params.img }}
+      <img src="{{ $url | absURL }}" alt="" class="testimonial-icon">
+    {{ end }}
+  </div>
+    <img src="{{ "img/quotes.png" | absURL }}" alt="" class="testimonial-quote-image">
+    <div>{{ .Content | markdownify }}</div>
 
     <footer>
         <ul class="actions">
-            <li>-- {{ .Params.author }}</li>
-            <li>{{ .Params.position }}</li>
+            <li><b>-- {{ .Params.author }}</b></li>
+            <li><i>{{ .Params.position }}</i></li>
         </ul>
     </footer>
     <footer>

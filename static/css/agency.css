@@ -427,6 +427,43 @@ section h3.section-subheading {
     }
 }
 
+.testimonial-panel {
+  margin: 17px;
+  padding: 15px;
+  border: solid lightgray 1px
+}
+
+.testimonial-icon-container {
+  height: 70px
+}
+
+.testimonial-icon {
+  max-width: 150px;
+  max-height: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.testimonial-quote-image {
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  max-width: 50px
+}
+
+.case-flex-row {
+  display: flex;
+  align-content: space-between;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.case-flex-item {
+  flex: 0 0 310px;
+  margin-bottom: 30px;
+}
+
 .service-heading {
     margin: 15px 0;
     text-transform: none;
@@ -437,6 +474,9 @@ section h3.section-subheading {
     right: 0;
     margin: 30px auto;
     max-width: 400px;
+    border: 1px solid lightgrey;
+    background: rgba(255,255,255,1);
+    height: 100%;
 }
 
 #portfolio .portfolio-item .portfolio-link {
@@ -450,7 +490,7 @@ section h3.section-subheading {
     width: 100%;
     height: 100%;
     opacity: 0;
-    background: rgba(254,209,54,.9);
+    background: rgba(254,209,54,.5);
     -webkit-transition: all ease .5s;
     -moz-transition: all ease .5s;
     transition: all ease .5s;
@@ -460,9 +500,14 @@ section h3.section-subheading {
     margin-left: auto;
     margin-right: auto;
     display: block;
-    max-width: 200px;
-    height: 200px;
+    max-width: 180px;
+    height: 180px;
     padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+.case-study-icon {
+  max-height: 150px;
 }
 
 @media(min-width:768px) {
@@ -902,7 +947,7 @@ section#contact .text-success {
 }
 
 footer {
-    padding: 25px 0;
+    padding: 5px 0;
     text-align: center;
 }
 

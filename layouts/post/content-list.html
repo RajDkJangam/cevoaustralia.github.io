@@ -4,11 +4,6 @@
 <article class="post">
 {{ end }}
     {{ .Render "header" }}
-    {{ if .Params.excerpt }}
-        <p>{{ printf "%s" .Params.excerpt | markdownify }}</p>
-    {{ else }}
-        <p>{{ printf "%s" .Summary | markdownify }}</p>
-    {{ end }}
     <footer>
         <ul class="actions">
             <li><a href="{{ .Permalink }}" class="button big">Continue Reading</a></li>

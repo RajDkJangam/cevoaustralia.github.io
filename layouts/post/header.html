@@ -7,8 +7,15 @@
             <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
         {{ end }}
         {{ with .Description }}
-            <p>{{ . }}</p>
+            {{ . }}
         {{ end }}
+
+        {{ if .Params.excerpt }}
+            <p>{{ printf "%s" .Params.excerpt | markdownify }}</p>
+        {{ else }}
+            <p>{{ printf "%s" .Summary | markdownify }}</p>
+        {{ end }}
+
     </div>
     <div class="meta">
         {{ if .Site.Params.orderByPublishDate }}
