@@ -49,7 +49,7 @@ Showcases don't just have to be about the working software (although working sof
 
 For example, maybe your team tried adopting pair programming and found it really help reduce the amount of defects in testing or you spent more time doing UI wire frame walk throughs with users that reduced the amount of rework necessary on the UI each sprint.
 
-The story being the software can sometime make people appreciate more what they are seeing on screen
+The story behind the software can sometime make people appreciate what they are seeing on screen.
 
 <br>
 
