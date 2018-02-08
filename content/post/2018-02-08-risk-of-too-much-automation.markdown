@@ -1,7 +1,6 @@
 ---
-draft: true
 title: "Is there such a thing as too much automation?"
-date: 2018-01-30
+date: 2018-02-08
 description: "Thinking of automation as a competitive cognitive artifact, and on ways to minimise the associated risks"
 categories:
     - automation
@@ -14,7 +13,7 @@ thumbnail: blog/too-much-automation.jpg
 ---
 A recent discussion at Cevo HQ came onto the topic of satellite navigation and how lost we would be without it, how in the good old days of street directories you were generally only lost the first time you travelled to a new location. This led on to a discussion of the work of [David Krakauer](https://www.santafe.edu/people/profile/david-krakauer) and the concepts of complementary and competitive [cognitive artifacts](http://nautil.us/blog/will-ai-harm-us-better-to-ask-how-well-reckon-with-our-hybrid-nature).
 
-A complementary cognitive artifact is something which you learn from. A map is a great example, when you study one it improves your mental model of an area and this understanding mostly remains even when the technology itself is taken away. Similarly, people who become experts at using an abacus can use a mental model of one to perform extraordinary calculations without the physical device. In this way these technologies compliment our own mental abilities.
+A complementary cognitive artifact is something which you learn from. A map is a great example; when you study one it improves your mental model of an area and this understanding mostly remains even when the technology itself is taken away. Similarly, people who become experts at using an abacus can use a mental model of one to perform extraordinary calculations without the physical device. In this way these technologies compliment our own mental abilities.
 
 A competitive cognitive artifact on the other hand is something which performs a task on our behalf, offloading our own mental processing of the task. Satellite navigation means we no longer need to develop a mental model of our surrounding area but instead just listen to whether we need to turn left, right or to continue straight ahead. A calculator lets us perform incredible calculations but it does not improve our ability to calculate without it.
 
