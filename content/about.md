@@ -244,13 +244,14 @@ people:
 
   - name: Tom Partington
     sort: 2017-03-31
-    position: Systems Performance Engineer
-    desc: Tom is a systems performance engineer with a passion for building fast, resilient, and scalable systems. He believes the best way to do this is through collaboration,  automation, and effective instrumentation.
-          <br /><br />He is continuously learning, and is always excited by opportunities to share this knowledge.
+    position: Resilience Engineer
+    desc: Tom is a systems engineer with a background in web operations. He is interested in understanding and creating systems that are able to maintain functionality when faced with unexpected events, and the ability for organisations to sustain this adaptability.
     avatar: tom_partington.jpg
     socials:
       - icon_class: fa-twitter
         url: https://twitter.com/parmigiana
+      - icon_class: fa-linkedin
+        url: https://www.linkedin.com/in/tom-partington-28a66513a
 
   - name: Casey Leask
     sort: 2017-03-31
