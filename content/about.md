@@ -373,4 +373,13 @@ people:
     socials:
       - icon_class: fa-linkedin
         url: https://www.linkedin.com/in/guillaumegenevrier/
+
+  - name: Pete Fuggle
+    sort: 2018-02-12
+    position: Cloud Engineer
+    desc: Pete loves to solve problems with elegant solutions. He specialises in Infrastructure Automation on AWS and helping organisations deliver higher quality software, at scale, with increased agility and frequency. Pete is driven and rewarded by meeting technical challenges and learning new technologies and skills but is also highly motivated to collaborate, contribute to building high performing teams and encourage and foster best practice delivery.
+    avatar: pete_fuggle.jpg
+    socials:
+      - icon_class: fa-linkedin
+        url: https://www.linkedin.com/in/petefuggle/
 ---
