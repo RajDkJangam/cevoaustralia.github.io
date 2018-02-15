@@ -31,7 +31,7 @@ people:
     position: Executive Director
     desc:
       Geoff is a former EY Entrepreneur of the Year winner for the southern
-      region and has had 3 start-ups appear in the BRW Fast 100.
+      region and has had 4 start-ups appear in the BRW Fast 100.
       <br/><br/>Geoff is passionate about the IT industry and how IT can improve
       business performance and society in general. He has been solving business
       problems with the pragmatic use of IT for over 2 decades.
