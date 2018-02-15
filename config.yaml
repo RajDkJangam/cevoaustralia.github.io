@@ -143,6 +143,7 @@ params:
         warning: Please enter your phone number.
     subtitle: We will get back to you within 24 hours.
     title: Contact us
+    postURL: https://formspree.io/xrqqlwqm
 
   footer:
     copyright: © Cevo (Vic) Pty Ltd 2018
