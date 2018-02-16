@@ -7,7 +7,6 @@ categories:
 tags:
     - aws
     - cloud
-draft: true
 author: Team Cevo
 excerpt: Trent Hornibrook becomes Cevo's next AWS Cloud Warrior
 images: blog/aws-warrior-blog.png
