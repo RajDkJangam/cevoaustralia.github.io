@@ -43,4 +43,4 @@ Another method to prevent automation from limiting our understanding of our syst
 
 Alternatively we can also accept that automation provides a level of abstraction that reduces our understanding of how things work under the covers, and instead of trying to maintain this understanding of everything we can instead focus or efforts elsewhere. The fact that we no longer need to worry about racking servers and installing operating systems or even configuring services such as elasticsearch, postgres or apache means we have more time to solve far more [interesting problems](https://www.cevo.com.au/case-study/).
 
-And ultimately, we can generally always reverse engineer how something as done, the far more critical thing we need to understand is [why](https://cevo.com.au/culture/2017/02/28/devopsdays2016.html)?
+And ultimately, we can generally always reverse engineer how something was done, the far more critical thing we need to understand is [why](https://cevo.com.au/culture/2017/02/28/devopsdays2016.html)?
