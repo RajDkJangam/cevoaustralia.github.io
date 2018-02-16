@@ -70,7 +70,7 @@
                   {{ with .Site.Params.contact.error }}
                     {{ . | markdownify }}
                   {{ else }}
-                    Message could not be send. Please contact us at {{ (or .Site.Params.contact.email .Site.Params.email) }} instead.
+                    Message could not be sent. Please contact us at {{ (or .Site.Params.contact.email .Site.Params.email) }} instead.
                   {{ end }}
                 </div><br />
                 <button type="submit" value="Submit" class="btn btn-xl">{{ with .Site.Params.contact.buttonText }}{{ . }}{{ end }}</button>
