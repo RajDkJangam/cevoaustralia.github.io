@@ -255,7 +255,7 @@ people:
 
   - name: Casey Leask
     sort: 2017-03-31
-    position: Technical Craftsman
+    position: Technical Craftsperson
     desc: Casey has a passion for improving software development processes and helping companies deliver software faster through iterative releases and adapting agile concepts to match their needs.
     avatar: casey_leask.jpg
     socials:
