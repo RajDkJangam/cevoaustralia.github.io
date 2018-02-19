@@ -324,7 +324,7 @@ people:
     sort: 2017-11-13
     position: Software Developer
     desc: Grace is an experienced agile technologist, with a passion to deliver quality software. She has a keen interest for databases and automation of manual tasks. She believes that we are what we repeatedly do. She enjoys solving people problems and bringing teams together. Currently she is learning and understanding DevOps and trying to figure out how to solve people and technology problems in the Melbourne tech market.
-    avatar: grace_chilakamarri.png
+    avatar: grace_chilakamarri.jpg
     socials:
       - icon_class: fa-linkedin
         url: https://www.linkedin.com/in/reachgracie
