@@ -38,7 +38,7 @@ Outputs:
     Value: !Join
       - ''
       - - https://
-        - !Ref CevoWebContactForm
+        - !Ref ServerlessRestApi
         - '.execute-api.'
         - !Ref 'AWS::Region'
         - '.amazonaws.com/Prod/contact'
