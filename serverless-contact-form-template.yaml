@@ -7,7 +7,7 @@ Resources:
     Properties:
       Handler: serverless-contact-form.handler
       Runtime: nodejs6.10
-      CodeUri: s3://cevo.com.au/ServerlessContactForm.zip
+      CodeUri: ./ServerlessContactForm.zip
       Policies:
        - Version: '2012-10-17' # Policy Document
          Statement:
