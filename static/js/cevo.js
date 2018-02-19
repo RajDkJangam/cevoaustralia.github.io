@@ -60,7 +60,7 @@ $(document).ready(function(){
 
   // Random testimonials
   showRandomTestimonial();
-  window.setInterval(showRandomTestimonial, 10000);
+  window.setInterval(showRandomTestimonial, 15000);
 });
 
 // Closes the Responsive Menu on Menu Item Click
@@ -74,6 +74,7 @@ $('form[id=contactForm]').submit(function(){
     $('form[id=contactForm] #success').hide();
     $('form[id=contactForm] #error').hide();
     if (jqXHR.status == 200) {
+      $('form[id=contactForm]')[0].reset();
       $('form[id=contactForm] #success').show();
     }}, 'json').fail(function(){
       $('form[id=contactForm] #success').hide();

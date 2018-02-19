@@ -1,0 +1,44 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: A serverless contact form
+Resources:
+  CevoWebContactForm:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: serverless-contact-form.handler
+      Runtime: nodejs4.3
+      CodeUri: s3://cevo.com.au/ServerlessContactForm.zip
+      Policies:
+       - Version: '2012-10-17' # Policy Document
+         Statement:
+           - Effect: Allow
+             Action:
+               - logs:CreateLogGroup
+               - logs:CreateLogStream
+               - logs:PutLogEvents
+             Resource: 'arn:aws:logs:*:*:*'
+           - Effect: Allow
+             Action:
+               - ses:SendEmail
+             Resource: '*'
+      Environment:
+        Variables:
+          SENDER: "sales@cevo.com.au"
+          RECEIVER: "sales@cevo.com.au"
+      Events:
+        PostMessage:
+          Type: Api
+          Properties:
+            Path: /contact
+            Method: post
+
+Outputs:
+  ApiUrl:
+    Description: Contact Form API Gateway URL
+    Value: !Join
+      - ''
+      - - https://
+        - !Ref CevoWebContactForm
+        - '.execute-api.'
+        - !Ref 'AWS::Region'
+        - '.amazonaws.com/Prod/contact'
