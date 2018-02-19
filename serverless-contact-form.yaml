@@ -6,7 +6,7 @@ Resources:
     Type: AWS::Serverless::Function
     Properties:
       Handler: serverless-contact-form.handler
-      Runtime: nodejs4.3
+      Runtime: nodejs6.10
       CodeUri: s3://cevo.com.au/ServerlessContactForm.zip
       Policies:
        - Version: '2012-10-17' # Policy Document
