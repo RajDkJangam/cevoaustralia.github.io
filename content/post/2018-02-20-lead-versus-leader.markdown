@@ -8,7 +8,6 @@ tags:
     - leadership
     - culture
     - teamwork
-draft: true
 author: Grace Chilakamarri
 excerpt: Grace Chilakamarri shares her thoughts on why not all team Leads are automatically Leaders
 images: blog/lead-vs-leader.png
