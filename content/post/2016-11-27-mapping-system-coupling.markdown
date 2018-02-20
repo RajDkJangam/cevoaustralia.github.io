@@ -161,7 +161,7 @@ that this application relies on to do authentication of users.
 
 Perhaps it looks like this:
 
-{% image basic-system-with-humans.png image_optim:optimize:1 %}
+![Basic System With Humans](/img/blog/basic-system-with-humans.png)
 
 Uh-oh. A quick glance shows us that:
 
@@ -210,7 +210,7 @@ However, some key things to note:
   different teams and departments, implying human chains of communication
   about custodianship and negotiation for fixes and when versions change.
 
-{% image complex-example.png image_optim:optimize:1 %}
+![Complex Example](/img/blog/complex-example.png)
 
 ## You're in charge
 
