@@ -255,7 +255,7 @@ people:
 
   - name: Casey Leask
     sort: 2017-03-31
-    position: Technical Craftsman
+    position: Technical Craftsperson
     desc: Casey has a passion for improving software development processes and helping companies deliver software faster through iterative releases and adapting agile concepts to match their needs.
     avatar: casey_leask.jpg
     socials:
@@ -324,7 +324,7 @@ people:
     sort: 2017-11-13
     position: Software Developer
     desc: Grace is an experienced agile technologist, with a passion to deliver quality software. She has a keen interest for databases and automation of manual tasks. She believes that we are what we repeatedly do. She enjoys solving people problems and bringing teams together. Currently she is learning and understanding DevOps and trying to figure out how to solve people and technology problems in the Melbourne tech market.
-    avatar: grace_chilakamarri.png
+    avatar: grace_chilakamarri.jpg
     socials:
       - icon_class: fa-linkedin
         url: https://www.linkedin.com/in/reachgracie
