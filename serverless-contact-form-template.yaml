@@ -11,8 +11,8 @@ Resources:
       Timeout: "5"
       Environment:
         Variables:
-          SENDER: "tom.partington@cevo.com.au"
-          RECEIVER: "tom.partington@cevo.com.au"
+          SENDER: "sales@cevo.com.au"
+          RECEIVER: "sales@cevo.com.au"
 
   CevoWebContactFormPermission:
     Type: "AWS::Lambda::Permission"
