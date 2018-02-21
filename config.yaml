@@ -143,7 +143,8 @@ params:
         warning: Please enter your phone number.
     subtitle: We will get back to you within 24 hours.
     title: Contact us
-    postURL: https://v3zp9wrsc2.execute-api.ap-southeast-2.amazonaws.com/Prod/contact
+    postURL: https://hss6abxp62.execute-api.ap-southeast-2.amazonaws.com/production
+    postApiKey: X5goqxuxlv2jirQhf9s6P9u8L9sWJ57pasXFqR1K
 
   footer:
     copyright: © Cevo (Vic) Pty Ltd 2018

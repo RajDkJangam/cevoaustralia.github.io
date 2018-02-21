@@ -1,36 +1,198 @@
 AWSTemplateFormatVersion: '2010-09-09'
-Transform: AWS::Serverless-2016-10-31
-Description: A serverless contact form
+Description: A serverless contact form for the cevo website
 Resources:
-  CevoWebContactForm:
-    Type: AWS::Serverless::Function
-    Properties:
-      Handler: serverless-contact-form.handler
-      Runtime: nodejs6.10
-      CodeUri: ./ServerlessContactForm.zip
-      Policies:
-       - Version: '2012-10-17' # Policy Document
-         Statement:
-           - Effect: Allow
-             Action:
-               - logs:CreateLogGroup
-               - logs:CreateLogStream
-               - logs:PutLogEvents
-             Resource: 'arn:aws:logs:*:*:*'
-           - Effect: Allow
-             Action:
-               - ses:SendEmail
-             Resource: '*'
+  CevoWebContactFormFunction:
+    Type: "AWS::Lambda::Function"
+    Properties: 
+      Handler: "serverless-contact-form.handler"
+      Role: !GetAtt CevoWebContactFormRole.Arn
+      Code: "./ServerlessContactForm.zip"
+      Runtime: "nodejs6.10"
+      Timeout: "5"
       Environment:
         Variables:
-          SENDER: "sales@cevo.com.au"
-          RECEIVER: "sales@cevo.com.au"
-      Events:
-        PostMessage:
-          Type: Api
-          Properties:
-            Path: /contact
-            Method: post
+          SENDER: "tom.partington@cevo.com.au"
+          RECEIVER: "tom.partington@cevo.com.au"
+
+  CevoWebContactFormPermission:
+    Type: "AWS::Lambda::Permission"
+    Properties:
+      FunctionName: !GetAtt
+        - CevoWebContactFormFunction
+        - Arn
+      Action: 'lambda:InvokeFunction'
+      Principal: apigateway.amazonaws.com
+      SourceArn: !Join
+        - ''
+        - - 'arn:aws:execute-api:'
+          - !Ref "AWS::Region"
+          - ':'
+          - !Ref 'AWS::AccountId'
+          - ':'
+          - !Ref 'CevoWebContactFormRestApi'
+          - '/*'
+
+  CevoWebContactFormRole:
+    Type: "AWS::IAM::Role"
+    Properties:
+      RoleName: CevoWebContactFormRole
+      AssumeRolePolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+        - Effect: Allow
+          Principal:
+            Service:
+            - lambda.amazonaws.com
+          Action:
+          - sts:AssumeRole
+
+  CevoWebContactFormPolicy:
+      Type: "AWS::IAM::ManagedPolicy"
+      DependsOn: "CevoWebContactFormRole"
+      Properties:
+        ManagedPolicyName: "CevoWebContactFormPolicy"
+        PolicyDocument:
+          Version: 2012-10-17
+          Statement:
+            - Effect: Allow
+              Action:
+                - logs:CreateLogGroup
+                - logs:CreateLogStream
+                - logs:PutLogEvents
+              Resource: 'arn:aws:logs:*:*:*'
+            - Effect: Allow
+              Action:
+                - ses:SendEmail
+              Resource: '*'
+        Roles:
+          - CevoWebContactFormRole
+
+  CevoWebContactFormRestApi:
+    Type: "AWS::ApiGateway::RestApi"
+    Properties:
+      Name: CevoWebContactFormRestApi
+
+
+  CevoWebContactFormRestApiOptionsMethod:
+    Type: "AWS::ApiGateway::Method"
+    DependsOn: "CevoWebContactFormFunction"
+    Properties:
+      AuthorizationType: NONE
+      ApiKeyRequired: False
+      RestApiId: !Ref CevoWebContactFormRestApi
+      ResourceId: !GetAtt CevoWebContactFormRestApi.RootResourceId
+      HttpMethod: "OPTIONS"
+      Integration:
+        ContentHandling: CONVERT_TO_TEXT
+        IntegrationResponses:
+        - StatusCode: 200
+          ResponseParameters:
+            method.response.header.Access-Control-Allow-Headers: "'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token'"
+            method.response.header.Access-Control-Allow-Methods: "'POST,OPTIONS'"
+            method.response.header.Access-Control-Allow-Origin: "'*'"
+          ResponseTemplates:
+            application/json: ''
+        PassthroughBehavior: WHEN_NO_MATCH
+        RequestTemplates:
+          application/json: '{"statusCode": 200}'
+        Type: MOCK
+      MethodResponses:
+      - StatusCode: 200
+        ResponseModels:
+          application/json: 'Empty'
+        ResponseParameters:
+          method.response.header.Access-Control-Allow-Headers: false
+          method.response.header.Access-Control-Allow-Methods: false
+          method.response.header.Access-Control-Allow-Origin: false
+
+  CevoWebContactFormRestApiPostMethod:
+    Type: "AWS::ApiGateway::Method"
+    DependsOn: "CevoWebContactFormFunction"
+    Properties:
+      AuthorizationType: NONE
+      ApiKeyRequired: True
+      HttpMethod: "POST"
+      RestApiId: !Ref CevoWebContactFormRestApi
+      ResourceId: !GetAtt CevoWebContactFormRestApi.RootResourceId
+      Integration:
+        Type: AWS_PROXY
+        IntegrationHttpMethod: "POST"
+        Uri: !Sub arn:aws:apigateway:${AWS::Region}:lambda:path/2015-03-31/functions/${CevoWebContactFormFunction.Arn}/invocations
+
+  CevoWebContactFormDeployment:
+    Type: "AWS::ApiGateway::Deployment"
+    DependsOn: "CevoWebContactFormRestApiPostMethod"
+    Properties: 
+      RestApiId: !Ref CevoWebContactFormRestApi
+      Description: "Cevo Web Contact Form Deployment"
+
+  CevoWebContactFormStage:
+    Type: "AWS::ApiGateway::Stage"
+    Properties:
+      StageName: "production"
+      Description: "production"
+      RestApiId: !Ref CevoWebContactFormRestApi
+      DeploymentId: !Ref CevoWebContactFormDeployment
+      MethodSettings:
+        - ResourcePath: "/contact"
+          HttpMethod: "POST"
+          MetricsEnabled: 'true'
+          DataTraceEnabled: 'true'
+          ThrottlingBurstLimit: '1'
+        - ResourcePath: "/contact"
+          HttpMethod: "OPTIONS"
+          MetricsEnabled: 'true'
+          DataTraceEnabled: 'true'
+          ThrottlingBurstLimit: '1'
+
+  CevoWebContactFormApiKey:
+    Type: "AWS::ApiGateway::ApiKey"
+    DependsOn: "CevoWebContactFormStage"
+    Properties: 
+      Name: "CevoWebContactFormApiKey"
+      Description: "API Key to enable rate limiting"
+      Enabled: "true"
+      StageKeys: 
+        - RestApiId: !Ref CevoWebContactFormRestApi
+          StageName: "production"
+
+  CevoWebContactFormUsagePlan:
+    Type: AWS::ApiGateway::UsagePlan
+    DependsOn:
+      - "CevoWebContactFormFunction"
+      - "CevoWebContactFormRestApiPostMethod"
+      - "CevoWebContactFormStage"
+    Properties:
+      ApiStages:
+        - 
+          ApiId: !Ref CevoWebContactFormRestApi
+          Stage: "production"
+      Throttle:
+        BurstLimit: 1
+        RateLimit: 1
+      Quota:
+        Limit: 50
+        Period: DAY
+      UsagePlanName:
+        Fn::Join: [
+            "_",
+            [
+              !Ref "AWS::StackName",
+              !Ref "AWS::Region",
+              "UsagePlan"
+            ]
+          ]
+
+  UsagePlanKey:
+    Type: "AWS::ApiGateway::UsagePlanKey"
+    DependsOn: 
+      - "CevoWebContactFormFunction"
+      - "CevoWebContactFormUsagePlan"
+      - "CevoWebContactFormApiKey"
+    Properties : 
+      KeyId: !Ref 'CevoWebContactFormApiKey'
+      KeyType: API_KEY
+      UsagePlanId: !Ref 'CevoWebContactFormUsagePlan'
 
 Outputs:
   ApiUrl:
@@ -38,7 +200,7 @@ Outputs:
     Value: !Join
       - ''
       - - https://
-        - !Ref ServerlessRestApi
+        - !Ref CevoWebContactFormRestApi
         - '.execute-api.'
         - !Ref 'AWS::Region'
-        - '.amazonaws.com/Prod/contact'
+        - '.amazonaws.com/production'

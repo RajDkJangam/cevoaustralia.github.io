@@ -68,7 +68,11 @@ $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
 
-// Async contact form
+$.ajaxSetup({
+    headers: {  "x-api-key": $('form[id=contactForm]').attr('apikey') }
+});
+
+// Async contact form with jquery post
 $('form[id=contactForm]').submit(function(){
   $.post($(this).attr('action'), $(this).serialize(), function(data, textStatus, jqXHR){
     $('form[id=contactForm] #success').hide();
@@ -88,3 +92,5 @@ $('form[id=contactForm]').submit(function(){
 $.validate({
   modules : 'html5, toggleDisabled'
 });
+
+

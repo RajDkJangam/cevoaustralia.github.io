@@ -25,7 +25,8 @@ clean:
 serverless:
 	zip ServerlessContactForm.zip serverless-contact-form.js
 	aws cloudformation package --template-file ./serverless-contact-form-template.yaml --s3-bucket $(S3_BUCKET) --output-template-file serverless-contact-form.yaml
-	aws cloudformation deploy --template-file ./serverless-contact-form.yaml --stack-name cevo-web-serverless-contact-form
+	aws cloudformation deploy --template-file ./serverless-contact-form.yaml --stack-name cevo-web-serverless-contact-form --capabilities CAPABILITY_NAMED_IAM
+
 #
 # Docker build for TravisCI 
 #
