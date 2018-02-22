@@ -31,7 +31,7 @@ people:
     position: Executive Director
     desc:
       Geoff is a former EY Entrepreneur of the Year winner for the southern
-      region and has had 3 start-ups appear in the BRW Fast 100.
+      region and has had 4 start-ups appear in the BRW Fast 100.
       <br/><br/>Geoff is passionate about the IT industry and how IT can improve
       business performance and society in general. He has been solving business
       problems with the pragmatic use of IT for over 2 decades.
@@ -244,17 +244,18 @@ people:
 
   - name: Tom Partington
     sort: 2017-03-31
-    position: Systems Performance Engineer
-    desc: Tom is a systems performance engineer with a passion for building fast, resilient, and scalable systems. He believes the best way to do this is through collaboration,  automation, and effective instrumentation.
-          <br /><br />He is continuously learning, and is always excited by opportunities to share this knowledge.
+    position: Resilience Engineer
+    desc: Tom is a systems engineer with a background in web operations. He is interested in understanding and creating systems that are able to maintain functionality when faced with unexpected events, and the ability for organisations to sustain this adaptability.
     avatar: tom_partington.jpg
     socials:
       - icon_class: fa-twitter
         url: https://twitter.com/parmigiana
+      - icon_class: fa-linkedin
+        url: https://www.linkedin.com/in/tom-partington-28a66513a
 
   - name: Casey Leask
     sort: 2017-03-31
-    position: Technical Craftsman
+    position: Technical Craftsperson
     desc: Casey has a passion for improving software development processes and helping companies deliver software faster through iterative releases and adapting agile concepts to match their needs.
     avatar: casey_leask.jpg
     socials:
@@ -363,4 +364,13 @@ people:
     socials:
       - icon_class: fa-linkedin
         url: https://www.linkedin.com/in/guillaumegenevrier/
+
+  - name: Pete Fuggle
+    sort: 2018-02-12
+    position: Cloud Engineer
+    desc: Pete loves to solve problems with elegant solutions. He specialises in Infrastructure Automation on AWS and helping organisations deliver higher quality software, at scale, with increased agility and frequency. Pete is driven and rewarded by meeting technical challenges and learning new technologies and skills but is also highly motivated to collaborate, contribute to building high performing teams and encourage and foster best practice delivery.
+    avatar: pete_fuggle.jpg
+    socials:
+      - icon_class: fa-linkedin
+        url: https://www.linkedin.com/in/petefuggle/
 ---

@@ -84,7 +84,8 @@ Over the past few year AWS have demonstrated multiple times that they fit this b
 
 By using a "serverless" architecture, the application sits on a platform that is built for scale, and requires the application developers to bear in mind the management and impact of state.
 
-{% image census-sa.png image_optim:optimize:1 %}
+![Census](/img/blog/census-sa.png)
+
 
 ### Front End
 
