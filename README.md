@@ -35,11 +35,3 @@
 * `hugo --baseUrl http://localhost:1313`
 
   Output static html to `public` folder.
-
-## The Serverless Contact Form
-In order to use the serverless contact form we need to do a number of things:
-1) Run `make serverless`, this will zip the lambda code, upload it to the _cevo-builds_ s3 bucket, update the cloudformation template, and deploy the template. 
-2) Login to the AWS Console and verify the e-mail address in the correct SES region (unless you've changed the lambda function this should be us-west-2)
-3) Update the contact postURL parameter in the config.yaml with the ApiUrl output from the cloudformation stack.
-4) Update the contact postApiKey parameter in the config.yaml with the CevoWebContactFormApiKey value. You will need to use the API Gateway Console to fetch this.
-5) Redeploy the website.

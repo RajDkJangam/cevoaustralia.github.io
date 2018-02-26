@@ -60,7 +60,7 @@ $(document).ready(function(){
 
   // Random testimonials
   showRandomTestimonial();
-  window.setInterval(showRandomTestimonial, 15000);
+  window.setInterval(showRandomTestimonial, 10000);
 });
 
 // Closes the Responsive Menu on Menu Item Click
@@ -68,17 +68,12 @@ $('.navbar-collapse ul li a').click(function() {
     $('.navbar-toggle:visible').click();
 });
 
-$.ajaxSetup({
-    headers: {  "x-api-key": $('form[id=contactForm]').attr('apikey') }
-});
-
-// Async contact form with jquery post
+// Async contact form
 $('form[id=contactForm]').submit(function(){
   $.post($(this).attr('action'), $(this).serialize(), function(data, textStatus, jqXHR){
     $('form[id=contactForm] #success').hide();
     $('form[id=contactForm] #error').hide();
     if (jqXHR.status == 200) {
-      $('form[id=contactForm]')[0].reset();
       $('form[id=contactForm] #success').show();
     }}, 'json').fail(function(){
       $('form[id=contactForm] #success').hide();
@@ -92,5 +87,3 @@ $('form[id=contactForm]').submit(function(){
 $.validate({
   modules : 'html5, toggleDisabled'
 });
-
-
