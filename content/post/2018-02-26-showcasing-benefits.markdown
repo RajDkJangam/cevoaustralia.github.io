@@ -53,7 +53,7 @@ The story behind the software can sometime make people appreciate what they are 
 <br>
 
 #### Remove the fear of building the wrong thing
-Getting a shared understanding of what the "right" thing to build can be very very difficult. Some teams are petrified of building the wrong thing and being seen as a "bad" team. I found that convincing a team to show their work every week, and not worrying about the finer details of rightness, removed this fear.
+Getting a shared understanding of the "right" thing to build can be very very difficult. Some teams are petrified of building the wrong thing and being seen as a "bad" team. I found that convincing a team to show their work every week, and not worrying about the finer details of rightness, removed this fear.
 
 At worst, if people don't like what's on display you lost a week of work. At best, you just saved hours and hours of meetings to come to the same conclusion. I've found that most people don't really know what they want anyway until they see something in front of them and working.
 
