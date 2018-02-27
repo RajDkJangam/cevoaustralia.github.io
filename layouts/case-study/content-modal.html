@@ -15,7 +15,7 @@
         <div class="col-lg-8 col-lg-offset-2">
           <div class="modal-body">
             <article class="post">
-              <h2>{{ .Params.title  | markdownify }}</h2>
+              <h2 class="casestudy-heading">{{ .Params.title  | markdownify }}</h2>
               {{ if .Params.subtitle }}
                 <p class="item-intro text-muted">{{ .Params.subtitle | markdownify }}</p>
               {{ end }}
