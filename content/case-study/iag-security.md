@@ -1,5 +1,5 @@
 ---
-title: Watchmen - Collaborating with Security and APRA to migrate applications to AWS
+title: "Watchmen: Collaborating with Security and APRA to migrate applications to AWS"
 client: IAG
 clientLink: "#"
 cases: cloud
@@ -7,19 +7,19 @@ img: iag.png
 banner: IAG-Watchmen.png
 anchor: case-study-6
 ---
-# Industry
+## Industry
 
 Insurance services
 
-# Customer Overview
+## Customer Overview
 
 IAG sell insurance under many leading brands including NRMA Insurance, CGU, SGIO, SGIC, Swann Insurance and WFI (Australia); NZI, State, AMI and Lumley Insurance (New Zealand); Safety and NZI (Thailand); AAA Assurance (Vietnam); and Asuransi Parolamas (Indonesia).
 
-# Business Challenge
+## Business Challenge
 
 IAG had approximately 100 applications sitting on physical servers with a strategic direction to migrate to Amazon Web Services (AWS). Before this could begin, they needed to ensure that all environments met APRA regulations. Of the tools available at the time, none were suitable to fully achieve these objectives.
 
-# Solution
+## Solution
 
 IAG and Cevo worked with APRA to clarify and document a list of compliance requirements. The team then wrote a tool called 'Watchmen' that was governed by 40 unique security policies that would scan each environment (called 'Citizens') and report on compliance with these policies. Where an environment did not conform to the security policies, the tool would report this exception and where the exception occurred.
 

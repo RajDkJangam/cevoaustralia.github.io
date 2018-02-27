@@ -1,5 +1,5 @@
 ---
-title: How migrating to AWS delivered automated infrastructure, self-servicing capabilities & reduced costs
+title: "Migrating to AWS: delivering automated infrastructure, self-servicing capabilities & reduced costs"
 client: MYOB
 clientLink: "#"
 cases: devops
@@ -8,21 +8,21 @@ banner: myob-migrate-case-study2.png
 anchor: case-study-3
 
 ---
-# Industry
+## Industry
 
-Software
+Accounting Software
 
-# Customer Overview
+## Customer Overview
 
 MYOB is a leading provider of business management solutions in Australia and New Zealand. MYOB helps businesses of all kinds and sizes, delivering software and services that simplify accounting, payroll, client management, websites, and more. With a network of more than 25,000 accountants and other professional partners, MYOB provides the tools and support that help make business life easier.
 
-# Business Challenge
+## Business Challenge
 
 MYOB had a contract with its traditional Australian data centre due for renewal in early 2016. This provided the organisations with an opportunity to innovate and seek out infrastructure improvements to provide delivery teams more control of their environments. The vision was to reduce the cycle time of “concepts to production” through gaining configuration traceability, repeatability through automation and self service to reduce dependency on third parties. This vision ultimately tied into one of MYOB’s core business values to help businesses (their customers) be successful. 
 <br><i>“We needed a solution that would enable greater flexibility and visibility in terms of infrastructure configuration, automation and performance” </i> says Grant Tibbey, Infrastructure Lead.</br>
 In its current state, MYOB Essentials was running in a third-party data center, utilising SQL Server and a Java front end. The company decided to move its infrastructure to AWS.
 
-# Solution
+## Solution
 
 From the time MYOB decided it wanted more flexibility and more customer benefits from the Essentials infrastructure (until the existing contract expired), it had only approximately three months to complete the cutover.
 
@@ -38,9 +38,7 @@ By the time cutover took place the entire system could be rebuilt with a couple 
 
 Moving forward, the company plans to re-engineer the application from statically deployed to dynamic auto-scaling servers that come and go, and will look at ways to achieve zero downtime deploys to deal with fault tolerance. Through the ongoing use of Chef scripts and development practices applied to Ops, MYOB’s development team can rewrite the application in such a way that it can easily be deployed to AWS.
 
-
-
-# Benefits
+## Benefits
 
 Benefits of the solution include providing MYOB with:
 
