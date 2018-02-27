@@ -22,7 +22,7 @@ Here are some of the things I've used showcases for:
 <br>
 #### Sharing your work
 
-Well this one is pretty obvious. However sometimes teams don't think the work they do is showcaseable, or that only 'customer facing' applications should be showcased. I believe that if you are taking a product based approach to your work (which you should be! see my other blog post [here]({{< relref "2017-09-26-productise_me.md" >}})) showcases should definately be part of your team's rituals.
+Well this one is pretty obvious. However sometimes teams don't think the work they do is showcaseable, or that only 'customer facing' applications should be showcased. I believe that if you are taking a product based approach to your work (which you should be! see my other blog post [here]({{< relref "2017-09-26-productise_me.md" >}})) showcases should definitely be part of your team's rituals.
 
 A product has customers. The best way to engage with those customers is to show them what you are building.
 
