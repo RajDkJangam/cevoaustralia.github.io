@@ -1,10 +1,11 @@
 ---
-title: "Data driven decision making: Investigating the benefits of AWS spot instances"
+title: "Data driven decision making:"
+subtitle: Investigating the benefits of AWS spot instances
 client: Insurance Company
 clientLink: "#"
 cases: devops
 img: AWS_logo_CMYK.png
-banner: 
+banner: IAG-spot-case-study.png
 ---
 ## Industry
 
@@ -20,7 +21,7 @@ To improve their software development speed, the firm were investigating using A
 
 ## Solution
 
-The Insurance company ran some internal initiatives to rightsize AWS usage which were successful. To evaluate further cost reductions they asked Cevo to assist in evaluating:
+Our client ran some internal initiatives to rightsize AWS usage which were successful. To evaluate further cost reductions they asked Cevo to assist in evaluating:
 
 * If using AWS spot instances would reduce the monthly hosting bill
 * If there were any other, non-monetary expenses generated from running on spot
@@ -29,4 +30,4 @@ A experiment was set up to produce a cost analysis that would outline how differ
 
 ## Benefits
 
-Through this investigation, the Insurance company realised there would be no cost saving for them in moving to spot. Instead they were able to evaluate the effectiveness over a short period of time and make a decision without affecting any of their environments or risking a spike in cost.
+As a result of this investigation, our client realised there would be no cost saving for them in moving to spot. They were able to evaluate the effectiveness over a short period of time, and make a decision without affecting any of their environments or risking a spike in cost.
