@@ -1,6 +1,6 @@
 ---
-title: "Infrastructure Automation:" 
-subtitle: Improving speed of deployment, quality validation and continuous delivery
+title: "Infrastructure Automation: Improving speed of deployment, quality validation & continuous delivery" 
+subtitle: 
 client: Engineering Software
 clientLink: #
 cases: automation
