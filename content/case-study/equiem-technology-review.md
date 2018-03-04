@@ -4,8 +4,10 @@ subtitle: Customer-focused changes to the digital platform
 client: Start-up
 cases: engineering
 clientLink: "#"
-img: property-mgmt-thumbnail.png
-banner: equiem-CS.png
+img: property-mgmt-thumb.png
+banner: property-mgmt-banner.png
+imgold: property-mgmt-thumbnail.png
+bannerold: equiem-CS.png
 ---
 ### Industry
 

@@ -3,8 +3,8 @@ title: Achieving a 20% Decrease in Load Time
 client: Online Employment Services
 clientLink: #
 cases: engineering
-img: hourglass.png
-banner: seekCS.png
+img: loadtime-thumb.png
+banner: loadtime-banner.png
 ---
 
 ### Industry

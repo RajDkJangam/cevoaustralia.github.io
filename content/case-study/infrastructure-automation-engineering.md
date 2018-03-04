@@ -1,11 +1,11 @@
 ---
-title: "Infrastructure Automation: Improving speed of deployment, quality validation & continuous delivery" 
-subtitle: 
+title: "Infrastructure Automation: Improving speed of deployment, quality validation & continuous delivery"
+subtitle:
 client: Engineering Software
 clientLink: #
 cases: automation
-img: crane-thumbnail.png
-banner: Infra-Automation-CS.png
+img: infra-automation-thumb.png
+banner: infra-automation-banner.png
 ---
 ### Industry
 
@@ -13,7 +13,7 @@ Engineering Software
 
 ### Customer Overview
 
-Our client is the most widely used online collaboration platform in the world for construction, infrastructure, energy and resources projects. They help manage more than US$1 trillion in capital projects across 70 countries, serving over 70,000 user organizations. 
+Our client is the most widely used online collaboration platform in the world for construction, infrastructure, energy and resources projects. They help manage more than US$1 trillion in capital projects across 70 countries, serving over 70,000 user organizations.
 
 With over 850 employees dedicated to helping project teams finish early and under budget they are transforming how project teams work together, increasing accountability and extending control.
 
@@ -23,7 +23,7 @@ Over the past four years our client has experienced rapid grown through acquisit
 
 To meet the demands of an increasing market, they required an ability to accelerate the rate at which they could bring on new clients, and the infrastructure required to support them. At the time, using traditional infrastructure provisioning processes, the organisation was able to bring online a new hosting centre but it would take multiple months of effort.  The Cloud Engineering team was given the directive to slash the time it takes to provision new infrastructure while continuing to provide a high standard of quality.
 
-Investigations by the in-house Cloud Engineering team identified both Amazon Web Services (AWS) and Azure as great candidates to provide the Infrastructure as a Service to meet these growing demands. 
+Investigations by the in-house Cloud Engineering team identified both Amazon Web Services (AWS) and Azure as great candidates to provide the Infrastructure as a Service to meet these growing demands.
 
 ### Solution
 

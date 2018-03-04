@@ -4,8 +4,8 @@ subtitle: Fully utilising the functionality of Amazon Web Services
 client: Financial Technology
 clientLink: https://www.bluechain.com
 cases: engineering
-img: bluechain.png
-banner: BluechainCS.png
+img: bluechain-thumb.png
+banner: bluechain-banner.png
 ---
 
 ### Industry

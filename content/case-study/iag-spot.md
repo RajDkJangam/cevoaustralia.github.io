@@ -1,11 +1,13 @@
 ---
 title: "Data driven decision making: Investigating the benefits of AWS spot instances"
-subtitle: 
+subtitle:
 client: Insurance Company
 clientLink: "#"
 cases: devops
-img: AWS_logo_CMYK.png
-banner: IAG-spot-case-study.png
+img: aws-thumb.png
+banner: aws-banner.png
+imgold: AWS_logo_CMYK.png
+bannerold: IAG-spot-case-study.png
 ---
 ### Industry
 

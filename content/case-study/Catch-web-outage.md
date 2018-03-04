@@ -3,8 +3,8 @@ title: A Roadmap to better Website Performance
 client: Online Retail
 clientLink: "#"
 cases: engineering
-img: CatchIcon.png
-banner: catchCS.png
+img: catch-thumb.png
+banner: catch-banner.png
 anchor: case-study-4
 ---
 ### Industry
@@ -17,7 +17,7 @@ Our client is one of Australia's leading eCommerce organisations, with a track r
 
 ### Business Challenge
 
-The client had experienced an outage on the website due to performance issues. For an online retailer, any outage can have a significant impact on the business and its customers, so needed to be addressed as quickly as possible. 
+The client had experienced an outage on the website due to performance issues. For an online retailer, any outage can have a significant impact on the business and its customers, so needed to be addressed as quickly as possible.
 
 Further, due to the high demand of the website, the issue needed to be investigated and resolved whilst avoiding unscheduled outages. Our client had a theory as to the cause of the outage, but required external support to assist the team with verifying this cause and finding a solution.
 

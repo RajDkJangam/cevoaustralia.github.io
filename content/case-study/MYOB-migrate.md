@@ -3,8 +3,8 @@ title: "Migrating to AWS: Delivering automated infrastructure, self-servicing ca
 client: MYOB
 clientLink: "#"
 cases: devops
-img: myob.png
-banner: myob-migrate-case-study2.png
+img: myob-thumb.png
+banner: myob-banner.png
 anchor: case-study-3
 
 ---
@@ -18,7 +18,7 @@ MYOB is a leading provider of business management solutions in Australia and New
 
 ### Business Challenge
 
-MYOB had a contract with its traditional Australian data centre due for renewal in early 2016. This provided the organisations with an opportunity to innovate and seek out infrastructure improvements to provide delivery teams more control of their environments. The vision was to reduce the cycle time of “concepts to production” through gaining configuration traceability, repeatability through automation and self service to reduce dependency on third parties. This vision ultimately tied into one of MYOB’s core business values to help businesses (their customers) be successful. 
+MYOB had a contract with its traditional Australian data centre due for renewal in early 2016. This provided the organisations with an opportunity to innovate and seek out infrastructure improvements to provide delivery teams more control of their environments. The vision was to reduce the cycle time of “concepts to production” through gaining configuration traceability, repeatability through automation and self service to reduce dependency on third parties. This vision ultimately tied into one of MYOB’s core business values to help businesses (their customers) be successful.
 <br><i>“We needed a solution that would enable greater flexibility and visibility in terms of infrastructure configuration, automation and performance” </i> says Grant Tibbey, Infrastructure Lead.</br>
 In its current state, MYOB Essentials was running in a third-party data center, utilising SQL Server and a Java front end. The company decided to move its infrastructure to AWS.
 
@@ -32,7 +32,7 @@ The existing application had some automation around building and deploying to th
 
 Options for running MS SQL Server in AWS were considered and included RDS, Log Shipping and Always on Availability Groups to achieve High Availability. These options however were discarded due to cost, extended outage and data loss that would have occurred on failure or reconfiguration. Instead, Mirroring was chosen for HA with Log Shipping initially used to keep the data in AWS in sync with the traditional datacenter to within fifteen minutes so that the cutover would cause minimal impact to customers.
 
-The entire process of building the SQL Cluster in AWS was scripted from scratch. This included formatting, moving, labeling disks, moving system databases and logs, creating users, backup jobs, installing certificates to establishing mirroring using partner and witness amongst many other things that would traditionally have been manually done. 
+The entire process of building the SQL Cluster in AWS was scripted from scratch. This included formatting, moving, labeling disks, moving system databases and logs, creating users, backup jobs, installing certificates to establishing mirroring using partner and witness amongst many other things that would traditionally have been manually done.
 <br><i>“If something didn’t work, we can tear it down and build it again in hours,” says Grant. “Practice also makes perfect. We practiced rebuilding servers, and cutting over the system constantly. Even weeks before the actual cut over took place”.</i> </br>
 By the time cutover took place the entire system could be rebuilt with a couple of commands.
 

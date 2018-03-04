@@ -3,8 +3,10 @@ title: "Watchmen: Collaborating with Security and APRA to migrate applications t
 client: IAG
 clientLink: "#"
 cases: cloud
-img: iag.png
-banner: IAG-Watchmen.png
+img: iag-thumb.png
+banner: iag-banner.png
+imgold: iag.png
+bannerold: IAG-Watchmen.png
 anchor: case-study-6
 ---
 ### Industry
@@ -27,7 +29,7 @@ IAG and Cevo worked with APRA to clarify and document a list of compliance requi
 
 1. **Isolated rule logic**  
     The logic used for determining compliance to each rule sits in an isolated account that non of the monitored (Citizen) accounts can access. This ensures that there is no tampering with the rule logic, and a result of ‘Compliant’ means what we think it means.  
-    
+
 1. **Serverless**  
     Watchmen runs on AWS serverless infrastructure. All of the rule logic exists in Lambda functions, while the compliance scans themselves are managed by AWS config. This means the ongoing maintenance and support required for Watchmen is very low.  
 

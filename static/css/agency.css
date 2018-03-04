@@ -506,21 +506,13 @@ section h3.section-subheading {
     margin-left: auto;
     margin-right: auto;
     display: block;
-    max-width: 180px;
-    height: 180px;
     padding-bottom: 15px;
     padding-top: 15px;
 }
 
 .case-study-icon {
-  max-height: 150px;
-}
-
-@media(min-width:768px) {
-    #portfolio .portfolio-item .portfolio-link img {
-        max-width: 250px;
-        height: 250px;
-    }
+  max-height: 100px;
+  max-width: 150px;
 }
 
 #portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
