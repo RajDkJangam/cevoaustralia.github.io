@@ -6,8 +6,6 @@ clientLink: "#"
 cases: devops
 img: aws-thumb.png
 banner: aws-banner.png
-imgold: AWS_logo_CMYK.png
-bannerold: IAG-spot-case-study.png
 ---
 ### Industry
 

@@ -6,8 +6,6 @@ cases: engineering
 clientLink: "#"
 img: property-mgmt-thumb.png
 banner: property-mgmt-banner.png
-imgold: property-mgmt-thumbnail.png
-bannerold: equiem-CS.png
 ---
 ### Industry
 

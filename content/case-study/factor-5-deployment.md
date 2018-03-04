@@ -5,8 +5,6 @@ clientLink: "https://www.factor5.com.au/"
 cases: engineering
 img: factor5-thumb.png
 banner: factor5-banner.png
-imgold: factor5.png
-bannerold: factor5-case-study.png
 ---
 ## Industry
 Education Software
