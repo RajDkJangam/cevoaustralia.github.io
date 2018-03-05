@@ -13,9 +13,9 @@
       <div>
       {{ if .Params.img }}
         {{ $url := printf "img/case-study/%s" .Params.img }}
-        <img src="{{ $url | absURL }}" class="img-responsive case-study-icon" alt="">
+        <img src="{{ $url | absURL }}" class="case-study-icon" alt="">
       {{ else }}
-        <img src="{{ "/img/case-study/placeholder.png" | absURL }}" class="img-responsive" alt="">
+        <img src="{{ "/img/case-study/placeholder.png" | absURL }}" class="case-study-icon" alt="">
       {{ end }}
     </div>
 
@@ -26,13 +26,13 @@
       {{ else }}
         <h4><a href="#case-study-{{ urlize .Params.title }}" data-toggle="modal">{{ .Params.title | markdownify }}</a><h4>
       {{ end }}
-        <h4><p class="text-muted">
+        <h5><p class="text-muted">
           {{ with .Params.cases }}
             <a href="{{ add "/cases/" . | urlize }}">
               {{ . | humanize }}
             </a>
           {{ end }}
-        </p></h4>
+        </p></h5>
     </div>
   </div>
 </div>
