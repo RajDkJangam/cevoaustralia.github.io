@@ -9,7 +9,7 @@ banner: aws-banner.png
 ---
 ### Industry
 
-Financial Services
+Insurance Services
 
 ### Customer Overview
 
