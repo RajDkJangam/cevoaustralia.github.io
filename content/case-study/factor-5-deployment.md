@@ -6,7 +6,7 @@ cases: engineering
 img: factor5-thumb.png
 banner: factor5-banner.png
 ---
-### Industry
+## Industry
 Education Software
 
 ### Customer Overview
