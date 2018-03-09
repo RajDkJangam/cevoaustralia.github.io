@@ -33,6 +33,7 @@ Bringing solid experience in Infrastructure as Code patterns, the Cevo team prov
 
 ### Benefits
 
-Through investing in an Infrastructure as Code approach, the Cloud Engineering team is now able to deploy all of the required infrastructure within a hour. Not only does this save a large amount of time, but also increases the consistency of the environments due to automation repeatedly delivering the solution.
+Through investing in an Infrastructure as Code approach, the Cloud Engineering team is now able to deploy all of the required infrastructure within an hour. Not only does this save a large amount of time, but also increases the consistency of the environments due to automation repeatedly delivering the solution.
 
 By coupling a focus on automated quality validation and continuous delivery practice, the team now have a development process that will allow them to deliver the needed expansion to the organisation while still supporting a growing appetite for innovation.
+
