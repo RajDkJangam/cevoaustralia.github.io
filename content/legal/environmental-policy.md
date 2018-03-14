@@ -1,5 +1,7 @@
 ## ENVIRONMENTAL POLICY
 
+##### Last update: 13 March 2018
+
 At Cevo our goal is to build a company of wonderful people who solve interesting problems with great clients. We take seriously our responsibility to care for and protect the environment in which we operate. We are fully committed to improving environmental performance across all our business activities, and will encourage our staff to share that commitment.
 
 Cevo’s business is primarily based on our people, the concept behind our target is simple and designed to limit the carbon associated with their travel and the energy used in the buildings.
