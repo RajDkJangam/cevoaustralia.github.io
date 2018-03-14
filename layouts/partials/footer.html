@@ -15,7 +15,7 @@
           </li>
         </ul>
       </div>
-      <div class="col-md-3">
+      <div class="col-md-4">
         <ul class="list-inline social-buttons">
 
           {{ range .Site.Params.footer.social }}
@@ -24,14 +24,14 @@
 
         </ul>
       </div>
-      <div class="col-md-3">
+      <div class="col-md-4">
         <ul class="list-inline quicklinks">
           {{ range .Site.Params.footer.quicklinks }}
             <li><a href="{{ .link }}">{{ .text  | markdownify }}</a></li>
           {{ end }}
         </ul>
       </div>
-      <div class="col-md-5">
+      <div class="col-md-4">
           <ul class="list-inline quicklinks legal-links">
               <li><a href="{{ "/legal/terms-of-use" | absURL }}">Terms of Use</a></li>
               <li><a href="{{ "/legal/privacy-policy" | absURL }}">Privacy Policy</a></li>
