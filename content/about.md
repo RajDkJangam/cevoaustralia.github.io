@@ -311,15 +311,6 @@ people:
       - icon_class: fa-linkedin
         url: https://www.linkedin.com/in/johnny-sammon-74b21428
 
-  - name: Matt Elgin
-    sort: 2017-11-13
-    position: Sales Executive
-    desc: Matt Elgin is an experienced Sales Executive that has worked for some of our nation’s top multinational IT service providers and has also delivered sales growth for some exciting technology start-ups. Matt is known to build trusted relationships, ensuring his client’s needs and objectives are successfully met and has done so across a broad range of industries including utilities, logistics, healthcare, government and higher education.
-    avatar: matt_elgin.png
-    socials:
-      - icon_class: fa-linkedin
-        url: https://www.linkedin.com/in/elginmatt
-
   - name: Sian Hughes
     sort: 2017-11-13
     position: Marketing Executive
