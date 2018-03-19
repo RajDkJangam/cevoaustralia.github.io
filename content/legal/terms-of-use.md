@@ -1,4 +1,6 @@
-# WEBSITE USE TERMS AND CONDITIONS 
+# WEBSITE USE TERMS AND CONDITIONS
+
+##### Last update: 5 February 2018
 
 ## Cevo (Vic) Pty Ltd
 

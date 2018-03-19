@@ -1,5 +1,6 @@
-# Cevo (Vic) Pty Ltd ABN ABN 20 605 533 186
 ## PRIVACY POLICY
+
+##### Last update: 5 February 2018
 
 This Privacy Policy sets out our commitment to protecting the privacy of your personal
 information that we collect through this website cevo.com.au (Site) or directly from you. 
@@ -59,5 +60,3 @@ For any questions or notice, please contact us at:
 Cevo (Vic) Pty Ltd ABN: ABN 20 605 533 186
 
 Email: sales@cevo.com.au
-
-##### Last update: 5 February 2018

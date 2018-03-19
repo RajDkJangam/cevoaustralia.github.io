@@ -6,7 +6,7 @@ services:
       image: hugo:latest
       command: hugo serve --bind 0.0.0.0 --baseURL http://localhost/
       volumes:
-          - .:/data
+          - .:/data:z
       working_dir: /data
       ports:
         - "1313:1313"
