@@ -3,7 +3,7 @@ title: "Open sourcing in Enterprises"
 date: 2018-03-14T11:00:00+11:00
 draft: true
 description:
-    Simple solution to the challenges in open sourcing enterprise applications.
+    Addressing challenges in open sourcing enterprise applications.
 categories:
     - open sourcing
 tags:
@@ -12,7 +12,7 @@ tags:
     - git submodule
 author: Bhushan Manekar
 excerpt: 
-    Open sourcing applications in enterprises have many challenges. Publishing updates to the open source repository can be very complicated
+    Open sourcing applications in enterprises can be challenging. This article is about understanding those challenges and addressing them by using right tooling for managing your code.
 ---
 
 The concept of Open Sourcing the software is not new. We have seen giant organizations like Google and Amazon are actively contributing to the open source communities since many years. Probably you have also seen tons of open source repositories on GitHub.com which is a well known distributed version controlling platform.
