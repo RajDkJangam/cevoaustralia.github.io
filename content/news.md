@@ -2,6 +2,13 @@
 title: Cevo in the News
 type: news
 articles:
+  - name: "Hire smart, stay focused"
+    date: 2018-03-01
+    publication: Computer Reseller News
+    img: news/crn-march-18-thumb.png
+    url: "https://www.crn.com.au/feature/crn-fast50-finalist-cevo-grows-headcount-locks-in-major-aws-contract-487035"
+    description:
+      Cevo may be a rare breed when it comes to companies that can expound the virtues of agile and devops business practices and actually have the credentials to back it up.
   - name: Cevo brings major cloud cred to the No.2 place in the 2017 CRN Fast50
     date: 2017-12-04
     publication: Computer Reseller News

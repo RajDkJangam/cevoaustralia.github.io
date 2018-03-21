@@ -14,9 +14,9 @@ excerpt:
     Compliance is a thing. A big thing at most big organisations. Meeting compliance obligations, whether they are based on regulation, code of conduct or risk can be arduous. Fortunately automation can help!
 ---
 
-While it's possible to argue that automation can be [taken too far]({{< relref "2018-02-08-risk-of-too-much-automation.markdown" >}}) an area where I'm sure a lot of people would appreciate more automation is the area of compliance.
+While it's possible to argue that automation can be [taken too far]({{< relref "2018-02-08-risk-of-too-much-automation.markdown" >}}), one area where I'm sure a lot of people would appreciate **more** automation is in compliance.
 
-I recently had a great experience working for a client, where the team I'm working in was sent a list of items that auditors would be focusing on for the next audit. I know, I know, how could that be a great experience? The great part was we didn't have to do anything!
+I recently had a great experience working for a client, where the team was sent a list of items that auditors would be focusing on for the next audit. I know, I know, how could that be a great experience? Because we didn't have to do anything!
 
 The CI/CD pipeline and team practices that we had developed met all of the assessment criteria that were listed.
 
