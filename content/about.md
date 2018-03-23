@@ -355,4 +355,31 @@ people:
     socials:
       - icon_class: fa-linkedin
         url: https://www.linkedin.com/in/petefuggle/
+
+  - name: James Columbine
+    sort: 2018-03-23
+    position: Enterprise Account Sales
+    desc: James’ background in Business Development, Sales, Practice Management and Delivery, enables him to deliver pragmatic win:win outcomes. He combines strong relationship management and influencing skills with extensive experience and knowledge of IT consultancies and their business models. James enjoys providing market insight and business intelligence to develop customers’ competitive advantage.
+    avatar: james_columbine.jpg
+    socials:
+      - icon_class: fa-linkedin
+        url: https://www.linkedin.com/in/james-columbine-a20a582/
+
+  - name: Jeff Inman
+    sort: 2018-03-23
+    position: Business Transformation & Design Consultant
+    desc: Jeff is an “outside-the-box” thinker and a people person who enjoys helping organisations connect with their customers. Bringing a wealth of experience in Business Transformation, he can be regularly found championing a close alignment of ‘People’ and ‘technology’ aspects of an organisation to delivery robust innovative solutions with minimal change resilience.
+    avatar: jeff_inman.jpg
+    socials:
+      - icon_class: fa-linkedin
+        url: https://www.linkedin.com/in/jeffjinman/
+
+  - name: Rick Duckworth
+    sort: 2018-03-23
+    position: Enterprise Account Executive
+    desc: Rick is a self-driven, consultative executive with a technically-focused aptitude who enjoys technology in all its various forms. Passionate about people, empowerment and achievement, Rick takes pride in enabling people to be the best they can be and to achieve mutual success through the art of partnership and collaboration. Client-centricity underpins the strong business relationships formed by Rick, with an attentive style that engages easily and consistently delivers practical, high ROI outcomes.
+    avatar: rick_duckworth.jpg
+    socials:
+      - icon_class: fa-linkedin
+        url: https://www.linkedin.com/in/rick-duckworth-71a6151b/
 ---
