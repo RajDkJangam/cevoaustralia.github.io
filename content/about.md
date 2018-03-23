@@ -373,4 +373,13 @@ people:
     socials:
       - icon_class: fa-linkedin
         url: https://www.linkedin.com/in/jeffjinman/
+
+  - name: Rick Duckworth
+    sort: 2018-03-23
+    position: Enterprise Account Executive
+    desc: Rick is a self-driven, consultative executive with a technically-focused aptitude who enjoys technology in all its various forms. Passionate about people, empowerment and achievement, Rick takes pride in enabling people to be the best they can be and to achieve mutual success through the art of partnership and collaboration. Client-centricity underpins the strong business relationships formed by Rick, with an attentive style that engages easily and consistently delivers practical, high ROI outcomes.
+    avatar: rick_duckworth.jpg
+    socials:
+      - icon_class: fa-linkedin
+        url: https://www.linkedin.com/in/rick-duckworth-71a6151b/
 ---
