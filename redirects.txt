@@ -1,0 +1,17 @@
+/about.html /about/
+/careers.html /#contact
+/community.html /about/
+/services.html /#services
+/partners.html /partners/
+/blog/index.html /post/
+/contact.html /#contact
+/devops/2015/09/06/Is-the-EC2-Container-Service-a-bad-idea.html  /devops/2015/09/06/is-the-ec2-container-service-a-bad-idea.html
+/devops/2015/09/28/My-DevOps-Journey.html  /devops/2015/09/28/my-devops-journey.html
+/devops/2015/10/22/The-Consul-of-Elders.html  /devops/2015/10/22/the-consul-of-elders.html
+/devops/system architecture/2016/08/12/Census-2.0.html  /devops/2016/08/12/census-2.0.html
+/devops/2016/08/12/Census-2.0.html /devops/2016/08/12/census-2.0.html
+/community/2016/10/27/Patrick-Debois-Explains.html /community/2016/10/27/patrick-debois-explains.html
+/enterprise/2016/11/24/Enterprise-AWS.html /enterprise/2016/11/24/enterprise-aws.html
+/culture/2017/02/28/DevOpsDays2016.html /culture/2017/02/28/devopsdays2016.html
+/culture/2017/03/12/four-values-of-devops.html /devops/2017/03/12/four-values-of-devops.html
+/devops/2017/05/16/evolving-team-leadership.html /agile/transformation/2017/05/16/evolving-team-leadership.html
