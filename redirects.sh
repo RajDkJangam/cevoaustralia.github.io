@@ -1,7 +1,7 @@
 #!/bin/bash
 BUCKET=s3://cevo.com.au
 while read -r line; do
-  OBJECT=$(echo $line | cut -f1)
+  OBJECT=$(echo $line | awk '{print $1}')
   REDIRECT=$(echo $line | awk '{print $2}')
-  echo "aws s3 cp ${BUCKET}${OBJECT} ${BUCKET}${OBJECT} --website-redirect"
+  echo "aws s3 cp ${BUCKET}${OBJECT} ${BUCKET}${OBJECT} --website-redirect ${REDIRECT}"
 done < $1
