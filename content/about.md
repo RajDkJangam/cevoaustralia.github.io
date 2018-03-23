@@ -364,7 +364,7 @@ people:
     socials:
       - icon_class: fa-linkedin
         url: https://www.linkedin.com/in/james-columbine-a20a582/
-		
+
   - name: Jeff Inman
     sort: 2018-03-23
     position: Business Transformation & Design Consultant
