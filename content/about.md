@@ -291,17 +291,6 @@ people:
       - icon_class: fa-linkedin
         url: https://www.linkedin.com/in/bhushanmanekar
 
-  - name: Ranjeet Pethe
-    sort: 2017-08-15
-    position: Delivery Optimzr
-    desc: Ranjeet is a multifaceted software consultant. He is extremely passionate about optimisation and strongly believes in 'Jugaad' and 'YAGNI'. He is always looking for opportunities to implement them. He has worked as an Iteration Manger, Test Strategist, Business Analyst and Team Lead among various other things, over the past two decades.
-    avatar: ranjeet_pethe.jpg
-    socials:
-      - icon_class: fa-linkedin
-        url: https://www.linkedin.com/in/pethe/
-      - icon_class: fa-twitter
-        url: https://twitter.com/folourdream
-
   - name: Johnny Sammon
     sort: 2017-09-11
     position: Delivery Consultant
@@ -323,7 +312,7 @@ people:
   - name: Trystan Sykes
     sort: 2017-12-8
     position: DevOps Consultant
-    desc: Trystan has an extensive background in creating workable operational cultures, customer service and stakeholder engagement. He has only recently begun his journey as a developer but in a very short amount of time has displayed an aptitude and flair for software engineering. He loves solving interesting problems and excels at being an effective and calm communicator no matter the circumstance. 
+    desc: Trystan has an extensive background in creating workable operational cultures, customer service and stakeholder engagement. He has only recently begun his journey as a developer but in a very short amount of time has displayed an aptitude and flair for software engineering. He loves solving interesting problems and excels at being an effective and calm communicator no matter the circumstance.
     avatar: trystan_sykes.jpg
     socials:
       - icon_class: fa-linkedin
