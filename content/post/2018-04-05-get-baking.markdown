@@ -17,66 +17,75 @@ excerpt:
 ---
 
 
-## Accounts everywhere
+### Accounts everywhere
 
-The team I was working with had responsibility for seven AWS accounts. Each account was used for hosting either development, staging and production workloads. Ensuring that each team member had the correct access to the correct environments was not an easy task. Also each team member needed to manage different passwords and multi-factor authentication (MFA) tokens across each account.
+The team I was working with had responsibility for seven AWS accounts. Some accounts hosted production workloads, some were used for development and staging. There were several painful problems we encountered.
 
-AWS have recognised that access management across accounts can be difficult to deal with, so they released an article on how to approach the problem: *AWS LINK HERE*
+1. **On boarding team members**  
+When a new team member started, we had to create IAM users in every account they required access to. In most cases was all of them.
 
-## Identity Accounts
+1. **Managing passwords**  
+Having to manage seven different passwords in your password manager to log into AWS console is not fun. Managing seven different MFA tokens is even worse.
 
-Identity accounts are one way to solve the problem. An identity account has two main responsibilities:
+1. **Managing access keys**  
+Similar to passwords, having lots of different sets of access keys makes it hard to ensure they are tracked and secured appropriately.
 
-1. Validate a person is who they say they are (Authentication).
-1. Grant a person the correct level of access to the correct resources (Authorisation).
+1. **Auditing access**  
+As an APRA regulated entity, my client had to follow APRA risk management guidelines. One of which relates to reviewing who has access to which environments. With IAM users spread across lots of accounts, this was not an easy task.
 
-Team members would only need to log into the identity account, and the identity account would take care of granting access to all of the teams other accounts. The implications of this are:
+### Identity Accounts to the rescue
+
+None of these problems are new. AWS know this and have published an article on how to approach various problems with using multiple AWS accounts: https://aws.amazon.com/answers/account-management/aws-multi-account-security-strategy/
+
+The section of interest for this discussion relates to _identity accounts_.
+
+An identity account manages all of the authentication and authorisation for users, so the other AWS accounts don't have to. This means team members would only need to log into the identity account, and the identity account would take care of granting access to all of the teams other accounts. The implications of this are:
 
 1. Each team member only needs to manage one password and one MFA token.
-1. On boarding and off boarding of team members takes far less time.
+1. On boarding and off boarding of team members takes far less time and is less error prone.
 1. Auditing account access can be done from one place, the identity account.
 
-## Design of the bakery
+### Design of the bakery
 
-Cross account roles are used to access the child accounts from the identity account *LINK TO AWS CROSS ACCOUNT ROLE DOCS*.
+I won't delve too far into the implementation and design of our identity account solution here, but I do think it's worth mentioning how we arrived at the name "Bakery" for the identity account we built, and "Burgers" for the accounts you are granted access to.
 
-We decided to name our identity account Bakery and the child accounts Burgers. Everyone knows you go the Bakery to get a role before you grab a Burger. If you go straight to the burger you just end up with a big mess on your hands.
+For a person to access an AWS account, they first log into Bakery. Then they must choose which cross-account role to assume. Once the role has been assumed, they are able to access the Burger account. You can't go straight to the Burger without first grabbing a role.
 
-## Role setup
+### How many roles?
 
 Grouped accounts by:
 
  1. Environment
  1. Access level
 
-### Environment
+**Environment**
 
 1. Development
 1. Management
 1. Production
 
-### Access level
+**Access level**
 
 1. Read only
 1. Power user
 1. Admin
 
-## Using the bakery
+### Using the bakery
 
-### Console
+#### Console
 
 1. Log into Bakery as an IAM user.
 1. Select which role you would like to use.
 1. Assume that role in the Burger account.
 
-### Command line
+#### Command line
 
 1. Run a bootstrap script
 1. Run script
 1. Choose role from the list presented
 
 
-## Rolling it out
+### Rolling it out
 
 Team started using it, found it worked really well.
 
@@ -85,6 +94,6 @@ Demoed it at our showcases and gained interest from other teams around the organ
 Made some changes to the way the cloudformation templates were structured so it was easier for teams to configure to their needs.
 
 
-## Open sourcing
+### Open sourcing
 
 Due to the positive feedback received from other teams that had adopted Bakery, the decision was made to open source it you can find it here: *LINK TO BAKERY REPO*
