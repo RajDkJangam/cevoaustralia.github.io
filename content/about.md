@@ -291,17 +291,6 @@ people:
       - icon_class: fa-linkedin
         url: https://www.linkedin.com/in/bhushanmanekar
 
-  - name: Ranjeet Pethe
-    sort: 2017-08-15
-    position: Delivery Optimzr
-    desc: Ranjeet is a multifaceted software consultant. He is extremely passionate about optimisation and strongly believes in 'Jugaad' and 'YAGNI'. He is always looking for opportunities to implement them. He has worked as an Iteration Manger, Test Strategist, Business Analyst and Team Lead among various other things, over the past two decades.
-    avatar: ranjeet_pethe.jpg
-    socials:
-      - icon_class: fa-linkedin
-        url: https://www.linkedin.com/in/pethe/
-      - icon_class: fa-twitter
-        url: https://twitter.com/folourdream
-
   - name: Johnny Sammon
     sort: 2017-09-11
     position: Delivery Consultant
@@ -323,7 +312,7 @@ people:
   - name: Trystan Sykes
     sort: 2017-12-8
     position: DevOps Consultant
-    desc: Trystan has an extensive background in creating workable operational cultures, customer service and stakeholder engagement. He has only recently begun his journey as a developer but in a very short amount of time has displayed an aptitude and flair for software engineering. He loves solving interesting problems and excels at being an effective and calm communicator no matter the circumstance. 
+    desc: Trystan has an extensive background in creating workable operational cultures, customer service and stakeholder engagement. He has only recently begun his journey as a developer but in a very short amount of time has displayed an aptitude and flair for software engineering. He loves solving interesting problems and excels at being an effective and calm communicator no matter the circumstance.
     avatar: trystan_sykes.jpg
     socials:
       - icon_class: fa-linkedin
@@ -355,4 +344,31 @@ people:
     socials:
       - icon_class: fa-linkedin
         url: https://www.linkedin.com/in/petefuggle/
+
+  - name: James Columbine
+    sort: 2018-03-23
+    position: Enterprise Account Sales
+    desc: James’ background in Business Development, Sales, Practice Management and Delivery, enables him to deliver pragmatic win:win outcomes. He combines strong relationship management and influencing skills with extensive experience and knowledge of IT consultancies and their business models. James enjoys providing market insight and business intelligence to develop customers’ competitive advantage.
+    avatar: james_columbine.jpg
+    socials:
+      - icon_class: fa-linkedin
+        url: https://www.linkedin.com/in/james-columbine-a20a582/
+
+  - name: Jeff Inman
+    sort: 2018-03-23
+    position: Business Transformation & Design Consultant
+    desc: Jeff is an “outside-the-box” thinker and a people person who enjoys helping organisations connect with their customers. Bringing a wealth of experience in Business Transformation, he can be regularly found championing a close alignment of ‘People’ and ‘technology’ aspects of an organisation to delivery robust innovative solutions with minimal change resilience.
+    avatar: jeff_inman.jpg
+    socials:
+      - icon_class: fa-linkedin
+        url: https://www.linkedin.com/in/jeffjinman/
+
+  - name: Rick Duckworth
+    sort: 2018-03-23
+    position: Enterprise Account Executive
+    desc: Rick is a self-driven, consultative executive with a technically-focused aptitude who enjoys technology in all its various forms. Passionate about people, empowerment and achievement, Rick takes pride in enabling people to be the best they can be and to achieve mutual success through the art of partnership and collaboration. Client-centricity underpins the strong business relationships formed by Rick, with an attentive style that engages easily and consistently delivers practical, high ROI outcomes.
+    avatar: rick_duckworth.jpg
+    socials:
+      - icon_class: fa-linkedin
+        url: https://www.linkedin.com/in/rick-duckworth-71a6151b/
 ---
