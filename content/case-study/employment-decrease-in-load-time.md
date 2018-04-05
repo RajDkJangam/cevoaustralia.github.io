@@ -1,5 +1,5 @@
 ---
-title: Achieving a 20% Decrease in Load Time
+title: Achieving a 20% decrease in Load Time
 client: Online Employment Services
 clientLink: #
 cases: engineering
