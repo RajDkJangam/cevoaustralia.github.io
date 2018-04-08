@@ -127,16 +127,6 @@ people:
       - icon_class: fa-linkedin
         url: https://au.linkedin.com/in/owen-chung-27b2bb11
 
-  - name: Elliott Gorrell
-    sort: 2017-02-10
-    position: Software Developer
-    desc:
-      Elliott has always had  a passion for technology knowing from an early age he would one day be working in the tech field. He has a love for crafting quality code and the agile lifecycle. His move to Cevo allows him to assist organisations in their evolution into becoming more dynamic and efficient through the use of agile practices.
-    avatar: elliott_gorrell.jpg
-    socials:
-      - icon_class: fa-linkedin
-        url: https://www.linkedin.com/in/elliott-gorrell
-
   - name: James Strain
     sort: 2017-02-10
     position: Automation Engineer
