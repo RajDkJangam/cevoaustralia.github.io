@@ -82,8 +82,8 @@ The Bakery was demoed to other teams during a weekly showcase. We received reall
 
 ### Open sourcing
 
-After successfully guiding other teams though adopting their own Bakery, it seemed to make sense to make it avaialbe to people outside the organisation too. So we did!
+After successfully guiding other teams though adopting their own Bakery, making the Bakery goodness available outside the organisation seemed like a good idea. So we did!
 
-If you have a desire to checkout out Bakery take a look here: https://github.com/iagcl/bakery
+If you are eager to grab some roles from the Bakery take a look here: https://github.com/iagcl/bakery
 
-It's all open sourced so it wont cost you any dough.
+It's all open sourced, so won't cost you any dough.
