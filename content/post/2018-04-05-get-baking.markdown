@@ -53,47 +53,37 @@ For a person to access an AWS account, they first log into Bakery. Then they mus
 
 ### How many roles?
 
-Grouped accounts by:
+How many cross-account roles are used is completely up to the needs of the team. To begin with, we tried to keep things simple an minimise the amount of roles.
 
- 1. Environment
- 1. Access level
+Our roles were broken down according to the following attributes:
 
-**Environment**
+ 1. The environment of the accounts the role grants access to.
+ 1. The access level the role gives to that account.
 
-1. Development
-1. Management
-1. Production
+Our environment breakdown looked like this:
 
-**Access level**
+1. **Development** - accounts that were used for development.
+1. **Management** - accounts that hosted production tooling such as build pipelines.
+1. **Production** - accounts that hosted production workloads used by customers.
 
-1. Read only
-1. Power user
-1. Admin
+On the access level side:
+
+1. **Read only** - cannot change any aspects of the account.
+1. **Power user** - can modify and create resources in the account.
+1. **Admin** - can modify and create resources as well as modify account permissions.
+
+The combination of roles and access levels gave us nine roles to use for controlling a users account access.
 
 ### Using the bakery
 
-#### Console
+Assuming the roles can be done via the console or command line. For command line access, the team created a script that when run, would list all the roles you had access to. Then assuming a role was as simple as selecting one from the list.
 
-1. Log into Bakery as an IAM user.
-1. Select which role you would like to use.
-1. Assume that role in the Burger account.
-
-#### Command line
-
-1. Run a bootstrap script
-1. Run script
-1. Choose role from the list presented
-
-
-### Rolling it out
-
-Team started using it, found it worked really well.
-
-Demoed it at our showcases and gained interest from other teams around the organisation that were facing similar issues.
-
-Made some changes to the way the cloudformation templates were structured so it was easier for teams to configure to their needs.
-
+The Bakery was demoed to other teams during a weekly showcase. We received really positive feedback on it, and other teams were keen to spin up their own Bakery.
 
 ### Open sourcing
 
-Due to the positive feedback received from other teams that had adopted Bakery, the decision was made to open source it you can find it here: *LINK TO BAKERY REPO*
+After successfully guiding other teams though adopting their own Bakery, it seemed to make sense to make it avaialbe to people outside the organisation too. So we did!
+
+If you have a desire to checkout out Bakery take a look here: https://github.com/iagcl/bakery
+
+It's all open sourced so it wont cost you any dough.
