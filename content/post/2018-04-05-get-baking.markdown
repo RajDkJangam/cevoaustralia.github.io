@@ -14,8 +14,9 @@ tags:
 author: Henrik Axelsson
 excerpt:
   As the number of AWS accounts a team uses increases, so does the headache of access and credential management. Identity accounts can help. We called ours Bakery.
+images: blog/bakery-blog.png
+thumbnail: blog/bakery-blog.png
 ---
-
 
 ### Accounts everywhere
 
