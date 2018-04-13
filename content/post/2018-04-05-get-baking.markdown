@@ -1,7 +1,6 @@
 ---
 title: "Get Baking"
 date: 2018-04-05T08:07:00+11:00
-draft: true
 description:
  On a roll - our client releases their second project to open source.
 
